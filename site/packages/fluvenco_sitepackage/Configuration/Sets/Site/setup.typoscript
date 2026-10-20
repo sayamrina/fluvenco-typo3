@@ -1,0 +1,81 @@
+lib.contentElement {
+  templateRootPaths.200 = EXT:fluvenco_sitepackage/Resources/Private/ContentElements/
+}
+
+lib.content = CONTENT
+lib.content {
+  table = tt_content
+  select {
+    orderBy = sorting
+    where = {#colPos}=0
+  }
+}
+
+tt_content.fluvenco_hero =< lib.contentElement
+tt_content.fluvenco_hero {
+  templateName = Hero
+  dataProcessing.10 = files
+  dataProcessing.10.references.fieldName = image
+}
+
+tt_content.fluvenco_cards =< lib.contentElement
+tt_content.fluvenco_cards {
+  templateName = Cards
+  dataProcessing.10 = menu
+  dataProcessing.10 {
+    special = directory
+    special.value.field = pages
+    as = cards
+    dataProcessing.10 = files
+    dataProcessing.10.references.fieldName = media
+  }
+}
+
+page = PAGE
+page {
+  typeNum = 0
+  shortcutIcon = EXT:fluvenco_sitepackage/Resources/Public/Images/favicon.svg
+  meta {
+    viewport = width=device-width, initial-scale=1
+    theme-color = #0b3a5b
+  }
+  includeCSS.site = EXT:fluvenco_sitepackage/Resources/Public/Css/site.css
+  includeJSFooter.site = EXT:fluvenco_sitepackage/Resources/Public/JavaScript/site.js
+  includeJSFooter.site.defer = 1
+
+  10 = PAGEVIEW
+  10 {
+    paths.100 = EXT:fluvenco_sitepackage/Resources/Private/PageView/
+    dataProcessing {
+      10 = menu
+      10 {
+        levels = 2
+        includeSpacer = 0
+        as = mainNavigation
+      }
+      20 = language-menu
+      20 {
+        languages = auto
+        as = languageNavigation
+      }
+      30 = menu
+      30 {
+        special = rootline
+        special.range = 0|-1
+        as = breadcrumb
+      }
+      40 = menu
+      40 {
+        special = directory
+        special.value = {$fluvenco.footerFolder}
+        as = footerNavigation
+      }
+    }
+  }
+}
+
+config {
+  pageTitleSeparator = |
+  pageTitleSeparator.noTrimWrap = | | |
+  noPageTitle = 0
+}

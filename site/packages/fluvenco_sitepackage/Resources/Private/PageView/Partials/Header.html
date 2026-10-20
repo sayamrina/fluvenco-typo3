@@ -1,0 +1,38 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<header class="site-header">
+    <div class="container header-inner">
+        <a class="brand" href="{f:uri.page(pageUid: site.rootPageId)}">
+            <img src="{f:uri.resource(path: 'EXT:fluvenco_sitepackage/Resources/Public/Images/logo.svg')}" alt="Fluvenco" width="168" height="34">
+        </a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">
+            <span class="sr-only"><f:translate key="LLL:EXT:fluvenco_sitepackage/Resources/Private/Language/locallang.xlf:menu" /></span>
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </button>
+        <nav id="main-nav" class="main-nav" aria-label="{f:translate(key: 'LLL:EXT:fluvenco_sitepackage/Resources/Private/Language/locallang.xlf:mainNav')}">
+            <ul>
+                <f:for each="{mainNavigation}" as="item">
+                    <li class="{f:if(condition: item.active, then: 'active')}{f:if(condition: item.children, then: ' has-sub')}">
+                        <a href="{item.link}"{f:if(condition: item.current, then: ' aria-current="page"')}>{item.title}</a>
+                        <f:if condition="{item.children}">
+                            <ul class="sub">
+                                <f:for each="{item.children}" as="child">
+                                    <li><a href="{child.link}"{f:if(condition: child.current, then: ' aria-current="page"')}>{child.title}</a></li>
+                                </f:for>
+                            </ul>
+                        </f:if>
+                    </li>
+                </f:for>
+            </ul>
+        </nav>
+        <nav class="lang-nav" aria-label="{f:translate(key: 'LLL:EXT:fluvenco_sitepackage/Resources/Private/Language/locallang.xlf:langNav')}">
+            <ul>
+                <f:for each="{languageNavigation}" as="lang">
+                    <f:if condition="{lang.available}">
+                        <li><a href="{lang.link}" hreflang="{lang.hreflang}" lang="{lang.hreflang}" class="{f:if(condition: lang.active, then: 'active')}"{f:if(condition: lang.active, then: ' aria-current="true"')} title="{lang.title}">{lang.twoLetterIsoCode -> f:format.case(mode: 'upper')}</a></li>
+                    </f:if>
+                </f:for>
+            </ul>
+        </nav>
+    </div>
+</header>
+</html>

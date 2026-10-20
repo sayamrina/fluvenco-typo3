@@ -1,0 +1,50 @@
+base: 'https://sayamrina.github.io/fluvenco-typo3/'
+baseVariants:
+  -
+    base: 'http://127.0.0.1:8080/'
+    condition: 'applicationContext == "Development"'
+rootPageId: 1
+dependencies:
+  - fluvenco/site
+websiteTitle: 'Fluvenco Fluidtechnik'
+languages:
+  -
+    title: Deutsch
+    enabled: true
+    languageId: 0
+    base: /de-de/
+    locale: de_DE.UTF-8
+    navigationTitle: Deutsch
+    hreflang: de-DE
+    flag: de
+    websiteTitle: 'Fluvenco Fluidtechnik'
+  -
+    title: English
+    enabled: true
+    languageId: 1
+    base: /en/
+    locale: en_GB.UTF-8
+    navigationTitle: English
+    hreflang: en
+    flag: gb
+    fallbackType: strict
+    fallbacks: ''
+    websiteTitle: 'Fluvenco Fluid Technology'
+  -
+    title: Français
+    enabled: true
+    languageId: 2
+    base: /fr-fr/
+    locale: fr_FR.UTF-8
+    navigationTitle: Français
+    hreflang: fr-FR
+    flag: fr
+    fallbackType: strict
+    fallbacks: ''
+    websiteTitle: 'Fluvenco Technologie des fluides'
+errorHandling: {  }
+routeEnhancers:
+  PageTypeSuffix:
+    type: PageType
+    map:
+      sitemap.xml: 1533906435

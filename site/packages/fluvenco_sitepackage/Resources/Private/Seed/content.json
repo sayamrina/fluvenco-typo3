@@ -1,0 +1,966 @@
+{
+ "root": {
+  "slug": "/",
+  "title": {
+   "de": "Startseite",
+   "en": "Home",
+   "fr": "Accueil"
+  },
+  "seo_title": {
+   "de": "Fluvenco Fluidtechnik: Filtration, Speicher und Sensorik",
+   "en": "Fluvenco Fluid Technology: filtration, accumulators and sensors",
+   "fr": "Fluvenco : filtration, accumulateurs et capteurs"
+  },
+  "description": {
+   "de": "Fluvenco entwickelt Filter, Hydrospeicher und Sensoren für mobile Maschinen, Windenergie und Industrieanlagen.",
+   "en": "Fluvenco develops filters, accumulators and sensors for mobile machinery, wind energy and industrial plants.",
+   "fr": "Fluvenco conçoit des filtres, des accumulateurs et des capteurs pour les engins mobiles, l’éolien et les installations industrielles."
+  },
+  "content": [
+   {
+    "CType": "fluvenco_hero",
+    "subheader": {
+     "de": "Fluidtechnik aus Saarbrücken",
+     "en": "Fluid technology from Saarbrücken",
+     "fr": "Technologie des fluides depuis Sarrebruck"
+    },
+    "header": {
+     "de": "Saubere Hydraulik. Längere Lebensdauer.",
+     "en": "Clean hydraulics. Longer service life.",
+     "fr": "Une hydraulique propre. Une durée de vie prolongée."
+    },
+    "bodytext": {
+     "de": "Filter, Hydrospeicher und Sensoren, die Maschinen zuverlässig in Bewegung halten, vom Bagger bis zur Windkraftanlage.",
+     "en": "Filters, accumulators and sensors that keep machines moving reliably, from excavators to wind turbines.",
+     "fr": "Des filtres, des accumulateurs et des capteurs qui font fonctionner les machines en toute fiabilité, de la pelleteuse à l’éolienne."
+    },
+    "header_link": "@products",
+    "image": "hero.svg",
+    "alt": {
+     "de": "Illustration eines Hydrauliksystems mit Filter, Manometer und Speicher",
+     "en": "Illustration of a hydraulic system with filter, pressure gauge and accumulator",
+     "fr": "Illustration d’un système hydraulique avec filtre, manomètre et accumulateur"
+    }
+   },
+   {
+    "CType": "fluvenco_cards",
+    "header": {
+     "de": "Unsere Produktbereiche",
+     "en": "Our product areas",
+     "fr": "Nos gammes de produits"
+    },
+    "subheader": {
+     "de": "Komponenten für zuverlässige Hydraulik",
+     "en": "Components for reliable hydraulics",
+     "fr": "Des composants pour une hydraulique fiable"
+    },
+    "pages": "@products"
+   },
+   {
+    "CType": "textmedia",
+    "header": {
+     "de": "Für Ihre Branche",
+     "en": "For your industry",
+     "fr": "Pour votre secteur"
+    },
+    "bodytext": {
+     "de": "<p>Ob mobile Arbeitsmaschine, Windenergieanlage oder Produktionslinie: Wir kennen die Anforderungen und liefern abgestimmte Komponenten.</p><p><a href=\"t3://page?uid=@industries\">Alle Branchen ansehen</a></p>",
+     "en": "<p>Mobile machinery, wind turbines or production lines: we know the requirements and supply matching components.</p><p><a href=\"t3://page?uid=@industries\">See all industries</a></p>",
+     "fr": "<p>Engins mobiles, éoliennes ou lignes de production : nous connaissons les exigences et fournissons des composants adaptés.</p><p><a href=\"t3://page?uid=@industries\">Voir tous les secteurs</a></p>"
+    },
+    "image": "plant.svg",
+    "alt": {
+     "de": "Illustration einer Industriehalle",
+     "en": "Illustration of an industrial hall",
+     "fr": "Illustration d’un hall industriel"
+    },
+    "imageorient": 26
+   },
+   {
+    "CType": "textmedia",
+    "header": {
+     "de": "Weltweit für Sie da",
+     "en": "Here for you worldwide",
+     "fr": "Présents dans le monde entier"
+    },
+    "bodytext": {
+     "de": "<p>Mit Standorten in Deutschland, Frankreich und Großbritannien betreuen wir Kunden in über 30 Ländern. Diese Website gibt es auf Deutsch, Englisch und Französisch.</p>",
+     "en": "<p>With sites in Germany, France and the United Kingdom, we serve customers in more than 30 countries. This website is available in German, English and French.</p>",
+     "fr": "<p>Avec des sites en Allemagne, en France et au Royaume-Uni, nous accompagnons des clients dans plus de 30 pays. Ce site est disponible en allemand, en anglais et en français.</p>"
+    },
+    "image": "globe.svg",
+    "alt": {
+     "de": "Weltkugel mit den Sprachen DE, EN und FR",
+     "en": "Globe with the languages DE, EN and FR",
+     "fr": "Globe avec les langues DE, EN et FR"
+    },
+    "imageorient": 25
+   },
+   {
+    "CType": "menu_subpages",
+    "header": {
+     "de": "Aktuelles",
+     "en": "Latest news",
+     "fr": "Actualités"
+    },
+    "pages": "@news"
+   }
+  ]
+ },
+ "pages": [
+  {
+   "key": "products",
+   "slug": {
+    "de": "/produkte",
+    "en": "/products",
+    "fr": "/produits"
+   },
+   "title": {
+    "de": "Produkte",
+    "en": "Products",
+    "fr": "Produits"
+   },
+   "abstract": {
+    "de": "Filter, Hydrospeicher und Sensoren für hydraulische Systeme.",
+    "en": "Filters, accumulators and sensors for hydraulic systems.",
+    "fr": "Filtres, accumulateurs et capteurs pour systèmes hydrauliques."
+   },
+   "description": {
+    "de": "Produktübersicht von Fluvenco: Filtertechnik, Hydrospeicher und Sensorik.",
+    "en": "Fluvenco product overview: filtration, accumulators and sensors.",
+    "fr": "Aperçu des produits Fluvenco : filtration, accumulateurs et capteurs."
+   },
+   "content": [
+    {
+     "CType": "text",
+     "header": {
+      "de": "Produkte",
+      "en": "Products",
+      "fr": "Produits"
+     },
+     "header_layout": 1,
+     "bodytext": {
+      "de": "<p>Unsere Komponenten schützen hydraulische Systeme vor Verschmutzung, speichern Energie und liefern Messwerte für die Zustandsüberwachung.</p>",
+      "en": "<p>Our components protect hydraulic systems from contamination, store energy and provide measurements for condition monitoring.</p>",
+      "fr": "<p>Nos composants protègent les systèmes hydrauliques contre la pollution, stockent l’énergie et fournissent des mesures pour la surveillance d’état.</p>"
+     }
+    },
+    {
+     "CType": "fluvenco_cards",
+     "header": {
+      "de": "Produktbereiche",
+      "en": "Product areas",
+      "fr": "Gammes"
+     },
+     "pages": "@products"
+    }
+   ],
+   "children": [
+    {
+     "key": "filter",
+     "slug": {
+      "de": "/produkte/filtertechnik",
+      "en": "/products/filtration",
+      "fr": "/produits/filtration"
+     },
+     "title": {
+      "de": "Filtertechnik",
+      "en": "Filtration",
+      "fr": "Filtration"
+     },
+     "abstract": {
+      "de": "Druck- und Rücklauffilter für saubere Hydraulikflüssigkeit.",
+      "en": "Pressure and return line filters for clean hydraulic fluid.",
+      "fr": "Filtres haute pression et de retour pour un fluide hydraulique propre."
+     },
+     "description": {
+      "de": "Druck- und Rücklauffilter von Fluvenco für mobile und stationäre Hydraulik.",
+      "en": "Fluvenco pressure and return line filters for mobile and stationary hydraulics.",
+      "fr": "Filtres haute pression et de retour Fluvenco pour l’hydraulique mobile et stationnaire."
+     },
+     "media": "filter.svg",
+     "content": [
+      {
+       "CType": "textmedia",
+       "header": {
+        "de": "Filtertechnik",
+        "en": "Filtration",
+        "fr": "Filtration"
+       },
+       "header_layout": 1,
+       "bodytext": {
+        "de": "<p>Bis zu 80 Prozent aller Ausfälle in Hydrauliksystemen gehen auf verschmutztes Öl zurück. Unsere Filter halten Partikel zuverlässig zurück und verlängern so die Lebensdauer von Pumpen und Ventilen.</p>",
+        "en": "<p>Up to 80 percent of all failures in hydraulic systems are caused by contaminated oil. Our filters reliably retain particles and extend the service life of pumps and valves.</p>",
+        "fr": "<p>Jusqu’à 80 % des pannes des systèmes hydrauliques sont dues à une huile polluée. Nos filtres retiennent les particules de manière fiable et prolongent la durée de vie des pompes et des distributeurs.</p>"
+       },
+       "image": "filter.svg",
+       "alt": {
+        "de": "Filtertechnik",
+        "en": "Filtration",
+        "fr": "Filtration"
+       },
+       "imageorient": 25
+      },
+      {
+       "CType": "bullets",
+       "header": {
+        "de": "Ihre Vorteile",
+        "en": "Your benefits",
+        "fr": "Vos avantages"
+       },
+       "bodytext": {
+        "de": "Hohe Abscheideleistung bis 3 µm\nWartungsanzeige für planbaren Elementwechsel\nKompakte Bauweise für mobile Maschinen\nFilterelemente aus recycelbarem Material",
+        "en": "High separation efficiency down to 3 µm\nClogging indicator for planned element changes\nCompact design for mobile machines\nFilter elements made of recyclable material",
+        "fr": "Efficacité de filtration élevée jusqu’à 3 µm\nIndicateur de colmatage pour un remplacement planifié\nConception compacte pour les engins mobiles\nÉléments filtrants en matériau recyclable"
+       }
+      },
+      {
+       "CType": "table",
+       "header": {
+        "de": "Technische Daten",
+        "en": "Technical data",
+        "fr": "Caractéristiques techniques"
+       },
+       "bodytext": {
+        "de": "Merkmal|Wert\nBetriebsdruck|bis 420 bar\nVolumenstrom|bis 600 l/min\nFiltrationsfeinheit|3 bis 25 µm\nTemperaturbereich|−30 bis +100 °C",
+        "en": "Feature|Value\nOperating pressure|up to 420 bar\nFlow rate|up to 600 l/min\nFiltration rating|3 to 25 µm\nTemperature range|−30 to +100 °C",
+        "fr": "Caractéristique|Valeur\nPression de service|jusqu’à 420 bar\nDébit|jusqu’à 600 l/min\nFinesse de filtration|3 à 25 µm\nPlage de température|−30 à +100 °C"
+       },
+       "table_header_position": 1
+      },
+      {
+       "CType": "text",
+       "header": {
+        "de": "Beratung zur Auslegung",
+        "en": "Help with sizing",
+        "fr": "Conseil pour le dimensionnement"
+       },
+       "bodytext": {
+        "de": "<p>Unser Vertriebsteam hilft bei der Auswahl der passenden Baugröße. <a href=\"t3://page?uid=@contact\">Kontakt aufnehmen</a></p>",
+        "en": "<p>Our sales team will help you choose the right size. <a href=\"t3://page?uid=@contact\">Get in touch</a></p>",
+        "fr": "<p>Notre équipe commerciale vous aide à choisir la bonne taille. <a href=\"t3://page?uid=@contact\">Nous contacter</a></p>"
+       }
+      }
+     ]
+    },
+    {
+     "key": "accumulator",
+     "slug": {
+      "de": "/produkte/hydrospeicher",
+      "en": "/products/accumulators",
+      "fr": "/produits/accumulateurs"
+     },
+     "title": {
+      "de": "Hydrospeicher",
+      "en": "Accumulators",
+      "fr": "Accumulateurs"
+     },
+     "abstract": {
+      "de": "Blasen- und Kolbenspeicher zur Energiespeicherung und Dämpfung.",
+      "en": "Bladder and piston accumulators for energy storage and damping.",
+      "fr": "Accumulateurs à vessie et à piston pour le stockage d’énergie et l’amortissement."
+     },
+     "description": {
+      "de": "Hydrospeicher von Fluvenco: Blasen- und Kolbenspeicher für Energiespeicherung und Pulsationsdämpfung.",
+      "en": "Fluvenco accumulators: bladder and piston designs for energy storage and pulsation damping.",
+      "fr": "Accumulateurs Fluvenco : à vessie et à piston pour le stockage d’énergie et l’amortissement des pulsations."
+     },
+     "media": "accumulator.svg",
+     "content": [
+      {
+       "CType": "textmedia",
+       "header": {
+        "de": "Hydrospeicher",
+        "en": "Accumulators",
+        "fr": "Accumulateurs"
+       },
+       "header_layout": 1,
+       "bodytext": {
+        "de": "<p>Hydrospeicher nehmen Flüssigkeit unter Druck auf und geben sie bei Bedarf wieder ab. So sparen sie Energie, dämpfen Druckspitzen und sichern Notfunktionen ab.</p>",
+        "en": "<p>Accumulators take in fluid under pressure and release it when needed. This saves energy, damps pressure peaks and secures emergency functions.</p>",
+        "fr": "<p>Les accumulateurs stockent le fluide sous pression et le restituent au besoin. Ils économisent de l’énergie, amortissent les pics de pression et sécurisent les fonctions d’urgence.</p>"
+       },
+       "image": "accumulator.svg",
+       "alt": {
+        "de": "Hydrospeicher",
+        "en": "Accumulators",
+        "fr": "Accumulateurs"
+       },
+       "imageorient": 25
+      },
+      {
+       "CType": "bullets",
+       "header": {
+        "de": "Einsatzbereiche",
+        "en": "Applications",
+        "fr": "Applications"
+       },
+       "bodytext": {
+        "de": "Energiespeicherung in Pressen und Spritzgießmaschinen\nPulsationsdämpfung hinter Pumpen\nNotbetätigung von Rotorblattverstellungen\nFederung bei mobilen Maschinen",
+        "en": "Energy storage in presses and injection moulding machines\nPulsation damping after pumps\nEmergency actuation of rotor blade pitch systems\nSuspension in mobile machines",
+        "fr": "Stockage d’énergie dans les presses et machines d’injection\nAmortissement des pulsations après les pompes\nActionnement d’urgence du calage des pales\nSuspension des engins mobiles"
+       }
+      },
+      {
+       "CType": "table",
+       "header": {
+        "de": "Technische Daten",
+        "en": "Technical data",
+        "fr": "Caractéristiques techniques"
+       },
+       "bodytext": {
+        "de": "Merkmal|Wert\nNennvolumen|0,5 bis 50 l\nBetriebsdruck|bis 350 bar\nBauarten|Blase, Kolben, Membran\nZulassungen|EU-Druckgeräterichtlinie",
+        "en": "Feature|Value\nNominal volume|0.5 to 50 l\nOperating pressure|up to 350 bar\nDesigns|bladder, piston, diaphragm\nApprovals|EU Pressure Equipment Directive",
+        "fr": "Caractéristique|Valeur\nVolume nominal|0,5 à 50 l\nPression de service|jusqu’à 350 bar\nTypes|vessie, piston, membrane\nHomologations|Directive européenne équipements sous pression"
+       },
+       "table_header_position": 1
+      },
+      {
+       "CType": "text",
+       "header": {
+        "de": "Beratung zur Auslegung",
+        "en": "Help with sizing",
+        "fr": "Conseil pour le dimensionnement"
+       },
+       "bodytext": {
+        "de": "<p>Unser Vertriebsteam hilft bei der Auswahl der passenden Baugröße. <a href=\"t3://page?uid=@contact\">Kontakt aufnehmen</a></p>",
+        "en": "<p>Our sales team will help you choose the right size. <a href=\"t3://page?uid=@contact\">Get in touch</a></p>",
+        "fr": "<p>Notre équipe commerciale vous aide à choisir la bonne taille. <a href=\"t3://page?uid=@contact\">Nous contacter</a></p>"
+       }
+      }
+     ]
+    },
+    {
+     "key": "sensor",
+     "slug": {
+      "de": "/produkte/sensorik",
+      "en": "/products/sensors",
+      "fr": "/produits/capteurs"
+     },
+     "title": {
+      "de": "Sensorik",
+      "en": "Sensors",
+      "fr": "Capteurs"
+     },
+     "abstract": {
+      "de": "Druck-, Temperatur- und Partikelsensoren für die Zustandsüberwachung.",
+      "en": "Pressure, temperature and particle sensors for condition monitoring.",
+      "fr": "Capteurs de pression, de température et de particules pour la surveillance d’état."
+     },
+     "description": {
+      "de": "Sensoren von Fluvenco für Druck, Temperatur und Ölzustand.",
+      "en": "Fluvenco sensors for pressure, temperature and oil condition.",
+      "fr": "Capteurs Fluvenco pour la pression, la température et l’état de l’huile."
+     },
+     "media": "sensor.svg",
+     "content": [
+      {
+       "CType": "textmedia",
+       "header": {
+        "de": "Sensorik",
+        "en": "Sensors",
+        "fr": "Capteurs"
+       },
+       "header_layout": 1,
+       "bodytext": {
+        "de": "<p>Wer den Zustand seines Öls kennt, kann Wartung planen statt auf Ausfälle zu reagieren. Unsere Sensoren messen kontinuierlich und liefern die Daten direkt an die Steuerung.</p>",
+        "en": "<p>If you know the condition of your oil, you can plan maintenance instead of reacting to failures. Our sensors measure continuously and send data straight to the controller.</p>",
+        "fr": "<p>Connaître l’état de son huile permet de planifier la maintenance au lieu de subir les pannes. Nos capteurs mesurent en continu et transmettent les données directement à la commande.</p>"
+       },
+       "image": "sensor.svg",
+       "alt": {
+        "de": "Sensorik",
+        "en": "Sensors",
+        "fr": "Capteurs"
+       },
+       "imageorient": 25
+      },
+      {
+       "CType": "bullets",
+       "header": {
+        "de": "Ihre Vorteile",
+        "en": "Your benefits",
+        "fr": "Vos avantages"
+       },
+       "bodytext": {
+        "de": "Messung von Druck, Temperatur und Partikelanzahl\nSchnittstellen IO-Link und CANopen\nRobustes Gehäuse nach IP67\nEinfache Nachrüstung in bestehende Anlagen",
+        "en": "Measures pressure, temperature and particle count\nIO-Link and CANopen interfaces\nRobust IP67 housing\nEasy retrofitting in existing systems",
+        "fr": "Mesure de la pression, de la température et du nombre de particules\nInterfaces IO-Link et CANopen\nBoîtier robuste IP67\nIntégration facile dans les installations existantes"
+       }
+      },
+      {
+       "CType": "table",
+       "header": {
+        "de": "Technische Daten",
+        "en": "Technical data",
+        "fr": "Caractéristiques techniques"
+       },
+       "bodytext": {
+        "de": "Merkmal|Wert\nMessbereich Druck|0 bis 600 bar\nGenauigkeit|±0,5 % FS\nAusgang|4 bis 20 mA, IO-Link\nSchutzart|IP67",
+        "en": "Feature|Value\nPressure range|0 to 600 bar\nAccuracy|±0.5 % FS\nOutput|4 to 20 mA, IO-Link\nProtection class|IP67",
+        "fr": "Caractéristique|Valeur\nPlage de pression|0 à 600 bar\nPrécision|±0,5 % PE\nSortie|4 à 20 mA, IO-Link\nIndice de protection|IP67"
+       },
+       "table_header_position": 1
+      },
+      {
+       "CType": "text",
+       "header": {
+        "de": "Beratung zur Auslegung",
+        "en": "Help with sizing",
+        "fr": "Conseil pour le dimensionnement"
+       },
+       "bodytext": {
+        "de": "<p>Unser Vertriebsteam hilft bei der Auswahl der passenden Baugröße. <a href=\"t3://page?uid=@contact\">Kontakt aufnehmen</a></p>",
+        "en": "<p>Our sales team will help you choose the right size. <a href=\"t3://page?uid=@contact\">Get in touch</a></p>",
+        "fr": "<p>Notre équipe commerciale vous aide à choisir la bonne taille. <a href=\"t3://page?uid=@contact\">Nous contacter</a></p>"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "industries",
+   "slug": {
+    "de": "/branchen",
+    "en": "/industries",
+    "fr": "/secteurs"
+   },
+   "title": {
+    "de": "Branchen",
+    "en": "Industries",
+    "fr": "Secteurs"
+   },
+   "abstract": {
+    "de": "Lösungen für mobile Maschinen, Windenergie und Industrie.",
+    "en": "Solutions for mobile machinery, wind energy and industry.",
+    "fr": "Solutions pour engins mobiles, éolien et industrie."
+   },
+   "description": {
+    "de": "Fluvenco Lösungen für mobile Arbeitsmaschinen, Windenergie und Industrieanlagen.",
+    "en": "Fluvenco solutions for mobile machinery, wind energy and industrial plants.",
+    "fr": "Solutions Fluvenco pour engins mobiles, éolien et installations industrielles."
+   },
+   "content": [
+    {
+     "CType": "text",
+     "header": {
+      "de": "Branchen",
+      "en": "Industries",
+      "fr": "Secteurs"
+     },
+     "header_layout": 1,
+     "bodytext": {
+      "de": "<p>Jede Branche stellt eigene Anforderungen an Hydraulik. Hier zeigen wir, wo unsere Komponenten im Einsatz sind.</p>",
+      "en": "<p>Every industry places its own demands on hydraulics. Here is where our components are at work.</p>",
+      "fr": "<p>Chaque secteur a ses propres exigences en matière d’hydraulique. Voici où nos composants sont utilisés.</p>"
+     }
+    },
+    {
+     "CType": "textmedia",
+     "header": {
+      "de": "Mobile Arbeitsmaschinen",
+      "en": "Mobile machinery",
+      "fr": "Engins mobiles"
+     },
+     "image": "mobile.svg",
+     "alt": {
+      "de": "Illustration eines Baggers",
+      "en": "Illustration of an excavator",
+      "fr": "Illustration d’une pelleteuse"
+     },
+     "imageorient": 25,
+     "bodytext": {
+      "de": "<p>Bagger, Radlader und Landmaschinen arbeiten unter Staub, Vibration und wechselnden Temperaturen. Kompakte Filter und robuste Sensoren sorgen dafür, dass sie im Einsatz bleiben.</p>",
+      "en": "<p>Excavators, wheel loaders and agricultural machines work in dust, vibration and changing temperatures. Compact filters and robust sensors keep them running.</p>",
+      "fr": "<p>Pelleteuses, chargeuses et machines agricoles travaillent dans la poussière, les vibrations et des températures variables. Des filtres compacts et des capteurs robustes les maintiennent en service.</p>"
+     }
+    },
+    {
+     "CType": "textmedia",
+     "header": {
+      "de": "Windenergie",
+      "en": "Wind energy",
+      "fr": "Éolien"
+     },
+     "image": "wind.svg",
+     "alt": {
+      "de": "Illustration einer Windkraftanlage",
+      "en": "Illustration of a wind turbine",
+      "fr": "Illustration d’une éolienne"
+     },
+     "imageorient": 26,
+     "bodytext": {
+      "de": "<p>In Windkraftanlagen sichern Hydrospeicher die Notverstellung der Rotorblätter. Wartung ist teuer, deshalb zählt jede Stunde zuverlässiger Betrieb.</p>",
+      "en": "<p>In wind turbines, accumulators secure the emergency pitch of the rotor blades. Maintenance is expensive, so every hour of reliable operation counts.</p>",
+      "fr": "<p>Dans les éoliennes, les accumulateurs sécurisent le calage d’urgence des pales. La maintenance coûte cher : chaque heure de fonctionnement fiable compte.</p>"
+     }
+    },
+    {
+     "CType": "textmedia",
+     "header": {
+      "de": "Industrieanlagen",
+      "en": "Industrial plants",
+      "fr": "Installations industrielles"
+     },
+     "image": "plant.svg",
+     "alt": {
+      "de": "Illustration einer Industriehalle",
+      "en": "Illustration of an industrial hall",
+      "fr": "Illustration d’un hall industriel"
+     },
+     "imageorient": 25,
+     "bodytext": {
+      "de": "<p>Pressen, Werkzeugmaschinen und Stahlwerke brauchen saubere Hydraulik rund um die Uhr. Mit Zustandsüberwachung lassen sich Stillstände planen statt erleiden.</p>",
+      "en": "<p>Presses, machine tools and steel mills need clean hydraulics around the clock. Condition monitoring lets you plan downtime instead of suffering it.</p>",
+      "fr": "<p>Presses, machines-outils et aciéries ont besoin d’une hydraulique propre en continu. La surveillance d’état permet de planifier les arrêts au lieu de les subir.</p>"
+     }
+    }
+   ]
+  },
+  {
+   "key": "service",
+   "slug": {
+    "de": "/service-schulungen",
+    "en": "/service-training",
+    "fr": "/service-formations"
+   },
+   "title": {
+    "de": "Service & Schulungen",
+    "en": "Service & Training",
+    "fr": "Service & formations"
+   },
+   "abstract": {
+    "de": "Ölanalyse, Inbetriebnahme und Schulungen für Ihr Team.",
+    "en": "Oil analysis, commissioning and training for your team.",
+    "fr": "Analyse d’huile, mise en service et formations pour votre équipe."
+   },
+   "description": {
+    "de": "Service von Fluvenco: Ölanalyse, Inbetriebnahme und Schulungen.",
+    "en": "Fluvenco service: oil analysis, commissioning and training.",
+    "fr": "Service Fluvenco : analyse d’huile, mise en service et formations."
+   },
+   "content": [
+    {
+     "CType": "textmedia",
+     "header": {
+      "de": "Service & Schulungen",
+      "en": "Service & Training",
+      "fr": "Service & formations"
+     },
+     "header_layout": 1,
+     "image": "training.svg",
+     "alt": {
+      "de": "Illustration einer Online-Schulung",
+      "en": "Illustration of an online training session",
+      "fr": "Illustration d’une formation en ligne"
+     },
+     "imageorient": 25,
+     "bodytext": {
+      "de": "<p>Gute Komponenten wirken nur, wenn sie richtig eingesetzt werden. Darum unterstützen wir Sie von der Inbetriebnahme bis zur Schulung Ihrer Mitarbeitenden.</p>",
+      "en": "<p>Good components only work when they are used correctly. That is why we support you from commissioning to training your staff.</p>",
+      "fr": "<p>De bons composants ne sont efficaces que s’ils sont bien utilisés. C’est pourquoi nous vous accompagnons de la mise en service à la formation de vos équipes.</p>"
+     }
+    },
+    {
+     "CType": "bullets",
+     "header": {
+      "de": "Unser Angebot",
+      "en": "What we offer",
+      "fr": "Notre offre"
+     },
+     "bodytext": {
+      "de": "Ölanalyse im eigenen Labor\nInbetriebnahme vor Ort\nPräsenz- und Online-Schulungen zur Fluidtechnik\nE-Learning-Module für Wartungspersonal",
+      "en": "Oil analysis in our own laboratory\nOn-site commissioning\nClassroom and online training on fluid technology\nE-learning modules for maintenance staff",
+      "fr": "Analyse d’huile dans notre laboratoire\nMise en service sur site\nFormations en présentiel et en ligne sur l’hydraulique\nModules e-learning pour le personnel de maintenance"
+     }
+    }
+   ]
+  },
+  {
+   "key": "news",
+   "slug": {
+    "de": "/news",
+    "en": "/news",
+    "fr": "/actualites"
+   },
+   "title": {
+    "de": "News",
+    "en": "News",
+    "fr": "Actualités"
+   },
+   "abstract": {
+    "de": "Neuigkeiten aus dem Unternehmen.",
+    "en": "Company news.",
+    "fr": "Nouvelles de l’entreprise."
+   },
+   "description": {
+    "de": "Aktuelle Meldungen von Fluvenco.",
+    "en": "Latest news from Fluvenco.",
+    "fr": "Les dernières nouvelles de Fluvenco."
+   },
+   "content": [
+    {
+     "CType": "menu_subpages",
+     "header": {
+      "de": "News",
+      "en": "News",
+      "fr": "Actualités"
+     },
+     "header_layout": 1,
+     "pages": "@news"
+    }
+   ],
+   "children": [
+    {
+     "key": "news1",
+     "slug": {
+      "de": "/news/neue-website-frankreich",
+      "en": "/news/new-website-france",
+      "fr": "/actualites/nouveau-site-france"
+     },
+     "title": {
+      "de": "Neue Website für Frankreich gestartet",
+      "en": "New website for France launched",
+      "fr": "Lancement du nouveau site pour la France"
+     },
+     "abstract": {
+      "de": "Kunden in Frankreich finden alle Inhalte jetzt auf Französisch.",
+      "en": "Customers in France can now find all content in French.",
+      "fr": "Nos clients en France trouvent désormais tous les contenus en français."
+     },
+     "description": {
+      "de": "Fluvenco startet die französische Website.",
+      "en": "Fluvenco launches its French website.",
+      "fr": "Fluvenco lance son site en français."
+     },
+     "content": [
+      {
+       "CType": "textmedia",
+       "header": {
+        "de": "Neue Website für Frankreich gestartet",
+        "en": "New website for France launched",
+        "fr": "Lancement du nouveau site pour la France"
+       },
+       "header_layout": 1,
+       "image": "globe.svg",
+       "alt": {
+        "de": "Weltkugel mit Sprachkürzeln",
+        "en": "Globe with language codes",
+        "fr": "Globe avec codes de langue"
+       },
+       "imageorient": 25,
+       "bodytext": {
+        "de": "<p>Seit heute ist unsere Website auch auf Französisch verfügbar. Alle Produktseiten wurden von unserem Team in Lyon übersetzt und fachlich geprüft.</p><p>Kunden in Frankreich, Belgien und der Schweiz finden damit Produktinformationen, technische Daten und Ansprechpartner in ihrer Sprache.</p>",
+        "en": "<p>As of today, our website is also available in French. All product pages were translated and technically reviewed by our team in Lyon.</p><p>Customers in France, Belgium and Switzerland can now find product information, technical data and contacts in their own language.</p>",
+        "fr": "<p>Depuis aujourd’hui, notre site est également disponible en français. Toutes les pages produits ont été traduites et vérifiées par notre équipe de Lyon.</p><p>Nos clients en France, en Belgique et en Suisse trouvent ainsi les informations produits, les caractéristiques techniques et leurs interlocuteurs dans leur langue.</p>"
+       }
+      }
+     ]
+    },
+    {
+     "key": "news2",
+     "slug": {
+      "de": "/news/sensor-io-link",
+      "en": "/news/sensor-io-link",
+      "fr": "/actualites/capteur-io-link"
+     },
+     "title": {
+      "de": "Drucksensoren jetzt mit IO-Link",
+      "en": "Pressure sensors now with IO-Link",
+      "fr": "Capteurs de pression désormais avec IO-Link"
+     },
+     "abstract": {
+      "de": "Die neue Sensorgeneration lässt sich direkt in digitale Anlagen einbinden.",
+      "en": "The new sensor generation connects directly to digital systems.",
+      "fr": "La nouvelle génération de capteurs s’intègre directement aux installations numériques."
+     },
+     "description": {
+      "de": "Fluvenco Drucksensoren unterstützen IO-Link.",
+      "en": "Fluvenco pressure sensors support IO-Link.",
+      "fr": "Les capteurs de pression Fluvenco prennent en charge IO-Link."
+     },
+     "content": [
+      {
+       "CType": "textmedia",
+       "header": {
+        "de": "Drucksensoren jetzt mit IO-Link",
+        "en": "Pressure sensors now with IO-Link",
+        "fr": "Capteurs de pression désormais avec IO-Link"
+       },
+       "header_layout": 1,
+       "image": "sensor.svg",
+       "alt": {
+        "de": "Illustration eines Drucksensors",
+        "en": "Illustration of a pressure sensor",
+        "fr": "Illustration d’un capteur de pression"
+       },
+       "imageorient": 25,
+       "bodytext": {
+        "de": "<p>Unsere Drucksensoren gibt es ab sofort mit IO-Link Schnittstelle. Messwerte und Diagnosedaten gelangen so ohne Umweg in die Steuerung. <a href=\"t3://page?uid=@sensor\">Zur Sensorik</a></p>",
+        "en": "<p>Our pressure sensors are now available with an IO-Link interface. Measurements and diagnostic data go straight to the controller. <a href=\"t3://page?uid=@sensor\">See sensors</a></p>",
+        "fr": "<p>Nos capteurs de pression sont désormais disponibles avec interface IO-Link. Mesures et données de diagnostic arrivent directement à la commande. <a href=\"t3://page?uid=@sensor\">Voir les capteurs</a></p>"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "company",
+   "slug": {
+    "de": "/unternehmen",
+    "en": "/company",
+    "fr": "/entreprise"
+   },
+   "title": {
+    "de": "Unternehmen",
+    "en": "Company",
+    "fr": "Entreprise"
+   },
+   "abstract": {
+    "de": "Ein Familienunternehmen aus dem Saarland.",
+    "en": "A family business from Saarland.",
+    "fr": "Une entreprise familiale de la Sarre."
+   },
+   "description": {
+    "de": "Über Fluvenco: Familienunternehmen für Fluidtechnik aus dem Saarland.",
+    "en": "About Fluvenco: a family-owned fluid technology company from Saarland.",
+    "fr": "À propos de Fluvenco : entreprise familiale de technologie des fluides en Sarre."
+   },
+   "content": [
+    {
+     "CType": "textmedia",
+     "header": {
+      "de": "Über Fluvenco",
+      "en": "About Fluvenco",
+      "fr": "À propos de Fluvenco"
+     },
+     "header_layout": 1,
+     "image": "company.svg",
+     "alt": {
+      "de": "Illustration des Firmengebäudes",
+      "en": "Illustration of the company building",
+      "fr": "Illustration du bâtiment de l’entreprise"
+     },
+     "imageorient": 25,
+     "bodytext": {
+      "de": "<p>Fluvenco ist ein Familienunternehmen mit Sitz in Saarbrücken. Rund 1.200 Mitarbeitende entwickeln und fertigen Komponenten für hydraulische Systeme an drei Standorten in Europa.</p>",
+      "en": "<p>Fluvenco is a family business based in Saarbrücken. Around 1,200 employees develop and manufacture components for hydraulic systems at three sites in Europe.</p>",
+      "fr": "<p>Fluvenco est une entreprise familiale basée à Sarrebruck. Environ 1 200 collaborateurs développent et fabriquent des composants pour systèmes hydrauliques sur trois sites en Europe.</p>"
+     }
+    },
+    {
+     "CType": "table",
+     "header": {
+      "de": "Zahlen und Fakten",
+      "en": "Facts and figures",
+      "fr": "Chiffres clés"
+     },
+     "table_header_position": 1,
+     "bodytext": {
+      "de": "Kennzahl|Wert\nMitarbeitende|ca. 1.200\nStandorte|Saarbrücken, Lyon, Birmingham\nLänder mit Kunden|über 30\nSprachen der Website|Deutsch, Englisch, Französisch",
+      "en": "Figure|Value\nEmployees|approx. 1,200\nSites|Saarbrücken, Lyon, Birmingham\nCountries with customers|more than 30\nWebsite languages|German, English, French",
+      "fr": "Indicateur|Valeur\nCollaborateurs|env. 1 200\nSites|Sarrebruck, Lyon, Birmingham\nPays clients|plus de 30\nLangues du site|allemand, anglais, français"
+     }
+    }
+   ]
+  },
+  {
+   "key": "career",
+   "slug": {
+    "de": "/karriere",
+    "en": "/careers",
+    "fr": "/carriere"
+   },
+   "title": {
+    "de": "Karriere",
+    "en": "Careers",
+    "fr": "Carrière"
+   },
+   "abstract": {
+    "de": "Arbeiten bei Fluvenco.",
+    "en": "Working at Fluvenco.",
+    "fr": "Travailler chez Fluvenco."
+   },
+   "description": {
+    "de": "Karriere bei Fluvenco: offene Stellen und Einstieg.",
+    "en": "Careers at Fluvenco: open positions and how to join.",
+    "fr": "Carrière chez Fluvenco : postes ouverts et candidature."
+   },
+   "content": [
+    {
+     "CType": "textmedia",
+     "header": {
+      "de": "Karriere bei Fluvenco",
+      "en": "Careers at Fluvenco",
+      "fr": "Carrière chez Fluvenco"
+     },
+     "header_layout": 1,
+     "image": "career.svg",
+     "alt": {
+      "de": "Illustration eines Teams",
+      "en": "Illustration of a team",
+      "fr": "Illustration d’une équipe"
+     },
+     "imageorient": 25,
+     "bodytext": {
+      "de": "<p>Wir suchen Menschen, die Technik verständlich machen und gerne im internationalen Team arbeiten. Ob Ausbildung, Studium oder Berufserfahrung: Bei uns gibt es viele Wege hinein.</p>",
+      "en": "<p>We are looking for people who make technology easy to understand and enjoy working in an international team. Apprenticeship, degree or work experience: there are many ways in.</p>",
+      "fr": "<p>Nous recherchons des personnes qui rendent la technique compréhensible et aiment travailler en équipe internationale. Apprentissage, études ou expérience : il existe de nombreuses façons de nous rejoindre.</p>"
+     }
+    },
+    {
+     "CType": "bullets",
+     "header": {
+      "de": "Was wir bieten",
+      "en": "What we offer",
+      "fr": "Ce que nous offrons"
+     },
+     "bodytext": {
+      "de": "Flexible Arbeitszeiten und mobiles Arbeiten\nWeiterbildung über unsere eigene Akademie\nBetriebliche Altersvorsorge\nDeutschlandticket als Jobticket",
+      "en": "Flexible working hours and remote work\nFurther training through our own academy\nCompany pension scheme\nSubsidised public transport ticket",
+      "fr": "Horaires flexibles et télétravail\nFormation continue dans notre propre académie\nRetraite d’entreprise\nAbonnement de transport subventionné"
+     }
+    }
+   ]
+  },
+  {
+   "key": "contact",
+   "slug": {
+    "de": "/kontakt",
+    "en": "/contact",
+    "fr": "/contact"
+   },
+   "title": {
+    "de": "Kontakt",
+    "en": "Contact",
+    "fr": "Contact"
+   },
+   "abstract": {
+    "de": "So erreichen Sie uns.",
+    "en": "How to reach us.",
+    "fr": "Comment nous joindre."
+   },
+   "description": {
+    "de": "Kontakt zu Fluvenco in Saarbrücken, Lyon und Birmingham.",
+    "en": "Contact Fluvenco in Saarbrücken, Lyon and Birmingham.",
+    "fr": "Contacter Fluvenco à Sarrebruck, Lyon et Birmingham."
+   },
+   "content": [
+    {
+     "CType": "text",
+     "header": {
+      "de": "Kontakt",
+      "en": "Contact",
+      "fr": "Contact"
+     },
+     "header_layout": 1,
+     "bodytext": {
+      "de": "<p>Fluvenco Fluidtechnik GmbH<br>Musterstraße 1<br>66111 Saarbrücken</p><p>E-Mail: info@fluvenco.example<br>Telefon: +49 681 000000</p>",
+      "en": "<p>Fluvenco Fluidtechnik GmbH<br>Musterstraße 1<br>66111 Saarbrücken, Germany</p><p>Email: info@fluvenco.example<br>Phone: +49 681 000000</p>",
+      "fr": "<p>Fluvenco Fluidtechnik GmbH<br>Musterstraße 1<br>66111 Sarrebruck, Allemagne</p><p>E-mail : info@fluvenco.example<br>Téléphone : +49 681 000000</p>"
+     }
+    },
+    {
+     "CType": "table",
+     "header": {
+      "de": "Standorte",
+      "en": "Sites",
+      "fr": "Sites"
+     },
+     "table_header_position": 1,
+     "bodytext": {
+      "de": "Standort|Zuständig für\nSaarbrücken|Deutschland, Österreich, Zentrale\nLyon|Frankreich, Belgien, Schweiz\nBirmingham|Großbritannien, Irland",
+      "en": "Site|Responsible for\nSaarbrücken|Germany, Austria, headquarters\nLyon|France, Belgium, Switzerland\nBirmingham|United Kingdom, Ireland",
+      "fr": "Site|Compétence\nSarrebruck|Allemagne, Autriche, siège\nLyon|France, Belgique, Suisse\nBirmingham|Royaume-Uni, Irlande"
+     }
+    }
+   ]
+  },
+  {
+   "key": "footer",
+   "doktype": 254,
+   "slug": {
+    "de": "/rechtliches",
+    "en": "/legal",
+    "fr": "/mentions"
+   },
+   "title": {
+    "de": "Rechtliches",
+    "en": "Legal",
+    "fr": "Mentions"
+   },
+   "children": [
+    {
+     "key": "imprint",
+     "slug": {
+      "de": "/impressum",
+      "en": "/legal-notice",
+      "fr": "/mentions-legales"
+     },
+     "title": {
+      "de": "Impressum",
+      "en": "Legal notice",
+      "fr": "Mentions légales"
+     },
+     "description": {
+      "de": "Impressum",
+      "en": "Legal notice",
+      "fr": "Mentions légales"
+     },
+     "content": [
+      {
+       "CType": "text",
+       "header": {
+        "de": "Impressum",
+        "en": "Legal notice",
+        "fr": "Mentions légales"
+       },
+       "header_layout": 1,
+       "bodytext": {
+        "de": "<p>Dies ist eine Projektwebsite. Fluvenco Fluidtechnik GmbH ist ein fiktives Unternehmen, alle Angaben sind erfunden.</p><p>Projekt und Umsetzung: Amrina Ali, Saarbrücken.</p>",
+        "en": "<p>This is a project website. Fluvenco Fluidtechnik GmbH is a fictional company and all details are invented.</p><p>Project and implementation: Amrina Ali, Saarbrücken.</p>",
+        "fr": "<p>Ceci est un site de projet. Fluvenco Fluidtechnik GmbH est une entreprise fictive, toutes les informations sont inventées.</p><p>Projet et réalisation : Amrina Ali, Sarrebruck.</p>"
+       }
+      }
+     ]
+    },
+    {
+     "key": "privacy",
+     "slug": {
+      "de": "/datenschutz",
+      "en": "/privacy",
+      "fr": "/confidentialite"
+     },
+     "title": {
+      "de": "Datenschutz",
+      "en": "Privacy",
+      "fr": "Confidentialité"
+     },
+     "description": {
+      "de": "Datenschutz",
+      "en": "Privacy",
+      "fr": "Confidentialité"
+     },
+     "content": [
+      {
+       "CType": "text",
+       "header": {
+        "de": "Datenschutz",
+        "en": "Privacy",
+        "fr": "Confidentialité"
+       },
+       "header_layout": 1,
+       "bodytext": {
+        "de": "<p>Diese Projektwebsite setzt keine Cookies, verwendet kein Tracking und lädt keine externen Schriften oder Skripte.</p>",
+        "en": "<p>This project website sets no cookies, uses no tracking and loads no external fonts or scripts.</p>",
+        "fr": "<p>Ce site de projet ne dépose aucun cookie, n’utilise aucun suivi et ne charge aucune police ni aucun script externe.</p>"
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

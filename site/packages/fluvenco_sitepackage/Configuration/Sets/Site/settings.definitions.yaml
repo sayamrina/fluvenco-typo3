@@ -1,0 +1,9 @@
+categories:
+  fluvenco:
+    label: 'Fluvenco'
+settings:
+  fluvenco.footerFolder:
+    label: 'Folder with footer pages (imprint, privacy)'
+    category: fluvenco
+    type: int
+    default: 0

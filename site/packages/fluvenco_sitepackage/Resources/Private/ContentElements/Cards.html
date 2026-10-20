@@ -1,0 +1,18 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+<f:section name="Main">
+    <ul class="cards">
+        <f:for each="{cards}" as="card">
+            <li class="card">
+                <f:for each="{card.files}" as="file" iteration="i">
+                    <f:if condition="{i.isFirst}"><f:image image="{file}" alt="" loading="lazy" /></f:if>
+                </f:for>
+                <div class="card-body">
+                    <h3><a href="{card.link}">{card.title}</a></h3>
+                    <f:if condition="{card.data.abstract}"><p>{card.data.abstract}</p></f:if>
+                </div>
+            </li>
+        </f:for>
+    </ul>
+</f:section>
+</html>

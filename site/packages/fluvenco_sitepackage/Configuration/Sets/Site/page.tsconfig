@@ -1,0 +1,43 @@
+# One backend layout: a single main column, so editors cannot break the page grid
+mod.web_layout.BackendLayouts {
+  default {
+    title = Standardseite
+    icon = content-container-columns-1
+    config {
+      backend_layout {
+        colCount = 1
+        rowCount = 1
+        rows {
+          1 {
+            columns {
+              1 {
+                name = Hauptinhalt
+                colPos = 0
+                identifier = main
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+# Editors only see the content elements the design supports
+mod.wizards.newContentElement.wizardItems {
+  default.show = header, text, textmedia, bullets, table, uploads, fluvenco_hero, fluvenco_cards
+  menu.show = menu_subpages, menu_sitemap
+  forms.show = *
+  special.show = div
+  plugins.show = *
+}
+
+TCEFORM.tt_content {
+  header_layout.removeItems = 1, 4, 5, 100
+  frame_class.removeItems = ruler-before, ruler-after, indent, indent-left, indent-right
+  imageorient.removeItems = 1, 2, 9, 10, 17, 18
+}
+
+# Translation: start new translations in connected mode
+mod.web_layout.localization.enableCopy = 0
+mod.web_layout.localization.enableTranslate = 1

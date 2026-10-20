@@ -1,0 +1,7 @@
+site/vendor/
+site/public/*
+!site/public/.htaccess
+site/var/
+site/config/system/settings.php
+site/config/sites/*/settings.yaml
+.DS_Store

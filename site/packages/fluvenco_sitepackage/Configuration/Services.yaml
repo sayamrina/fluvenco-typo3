@@ -1,0 +1,15 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  Amrina\FluvencoSitepackage\:
+    resource: '../Classes/*'
+
+  Amrina\FluvencoSitepackage\Command\SeedCommand:
+    tags:
+      - name: console.command
+        command: 'fluvenco:seed'
+        description: 'Create the demo page tree, content, translations and editor groups'
+        schedulable: false

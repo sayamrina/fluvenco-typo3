@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fluvenco TYPO3 Website</title>
+<meta name="description" content="Projekt 2026: mehrsprachige Unternehmenswebsite mit TYPO3 13 LTS, Redakteursleitfaden, Übersetzungsworkflow und automatischer Qualitätssicherung.">
+<style>
+:root {
+  --bg: #f7f9fb; --surface: #ffffff; --ink: #1b2733; --muted: #536472; --line: #dbe4eb;
+  --accent: #0b3a5b; --teal: #0b7f7d; --soft: #e6f2f5;
+  --sans: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; --mono: ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #11161b; --surface: #182029; --ink: #e8eef3; --muted: #9fb0bd; --line: #2a3540; --accent: #8cc4e8; --teal: #5fd0cc; --soft: #1b2b36; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.6 var(--sans); }
+.wrap { max-width: 920px; margin: 0 auto; padding: 0 20px; }
+header { padding: 64px 0 40px; border-bottom: 1px solid var(--line); }
+.kicker { font-size: 13px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--teal); }
+h1 { font-size: clamp(34px, 6vw, 52px); line-height: 1.08; margin: 12px 0 16px; color: var(--accent); }
+.lead { font-size: 19px; max-width: 720px; margin: 0; }
+.author { display: flex; align-items: center; gap: 12px; margin-top: 22px; }
+.author img { width: 52px; height: 52px; border-radius: 50%; object-fit: cover; border: 1px solid var(--line); }
+.author .name { font-weight: 600; }
+.byline { color: var(--muted); font-size: 14px; }
+a { color: var(--teal); }
+.btns { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 24px; }
+.btn { padding: 10px 16px; border-radius: 8px; font-weight: 600; font-size: 15px; text-decoration: none; border: 1px solid var(--accent); color: var(--accent); }
+.btn.primary { background: var(--accent); color: var(--bg); }
+section { padding: 44px 0; border-bottom: 1px solid var(--line); }
+h2 { font-size: 26px; line-height: 1.2; margin: 0 0 6px; color: var(--accent); }
+.sub { color: var(--muted); margin: 0 0 22px; }
+table { width: 100%; border-collapse: collapse; font-size: 15px; background: var(--surface); border: 1px solid var(--line); }
+th, td { padding: 10px 12px; text-align: left; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { background: var(--soft); font-size: 13px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.stat { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 16px; }
+.stat b { display: block; font-size: 30px; color: var(--accent); line-height: 1.1; }
+.stat span { color: var(--muted); font-size: 14px; }
+figure { margin: 0 0 18px; }
+figure img { width: 100%; border: 1px solid var(--line); border-radius: 10px; display: block; }
+figcaption { font-size: 14px; color: var(--muted); margin-top: 6px; }
+.two { display: grid; grid-template-columns: 2fr 1fr; gap: 16px; align-items: start; }
+ul.docs { padding-left: 20px; } ul.docs li { margin-bottom: 6px; }
+code { font-family: var(--mono); font-size: 14px; background: var(--soft); padding: 1px 5px; border-radius: 4px; }
+footer { padding: 28px 0 56px; color: var(--muted); font-size: 14px; }
+@media (max-width: 720px) { .grid, .two { grid-template-columns: 1fr; } header { padding-top: 44px; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="kicker">Projekt 2026 · TYPO3 13 LTS · Website-Management</div>
+    <h1>Mehrsprachige Unternehmenswebsite mit TYPO3</h1>
+    <p class="lead">Website für das fiktive Industrieunternehmen <b>Fluvenco Fluidtechnik</b> in Deutsch, Englisch und Französisch. Neben der Website selbst zeigt das Projekt die Arbeit dahinter: Redakteursleitfaden, Übersetzungs- und Freigabeprozess für Länderwebsites, SEO und automatische Qualitätssicherung.</p>
+    <div class="author">
+      <img src="img/amrina.jpg" alt="Foto von Amrina" width="52" height="52">
+      <div>
+        <div class="name">Amrina</div>
+        <div class="byline">M.Sc. Educational Technology, Universität des Saarlandes · <a href="https://www.linkedin.com/in/amrina-ali-487025119/">LinkedIn</a> · <a href="https://github.com/sayamrina">GitHub</a></div>
+      </div>
+    </div>
+    <div class="btns">
+      <a class="btn primary" href="site/de-de/">Website ansehen</a>
+      <a class="btn" href="https://github.com/sayamrina/fluvenco-typo3">Code auf GitHub</a>
+      <a class="btn" href="https://github.com/sayamrina/fluvenco-typo3/blob/main/guides/Redakteursleitfaden.md">Redakteursleitfaden</a>
+      <a class="btn" href="https://sayamrina.github.io/">Mein Portfolio</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>Auf einen Blick</h2>
+    <p class="sub">Alle Seiten in allen Sprachen wurden automatisch geprüft.</p>
+    <div class="grid">
+      <div class="stat"><b>3</b><span>Sprachen mit verbundenen Übersetzungen (DE, EN, FR)</span></div>
+      <div class="stat"><b>45</b><span>Seiten geprüft: Links, SEO-Angaben, Alternativtexte</span></div>
+      <div class="stat"><b>0</b><span>Verstöße gegen WCAG 2.1 AA (axe-core)</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Die Website</h2>
+    <p class="sub">Startseite, Produktbereiche, Branchen, Service, News, Unternehmen, Karriere und Kontakt. Responsives Layout ohne externe Skripte oder Tracking.</p>
+    <figure><img src="img/home_de.jpg" alt="Startseite der Fluvenco Website auf Deutsch" loading="lazy"><figcaption>Startseite (Deutsch) mit Hero, Teaser-Karten für die Produktbereiche und News.</figcaption></figure>
+    <div class="two">
+      <figure><img src="img/product_en.jpg" alt="Produktseite Filtration auf Englisch" loading="lazy"><figcaption>Produktseite (Englisch) mit Breadcrumb, Aufzählung und Tabelle der technischen Daten.</figcaption></figure>
+      <figure><img src="img/mobile_fr.jpg" alt="Produktseite Capteurs auf dem Smartphone" loading="lazy"><figcaption>Smartphone-Ansicht (Französisch).</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Im TYPO3 Backend</h2>
+    <p class="sub">So arbeiten Redaktion und Länderredaktionen mit dem System.</p>
+    <figure><img src="img/be_languages.jpg" alt="TYPO3 Seitenmodul im Sprachvergleich mit Deutsch, Englisch und Französisch" loading="lazy"><figcaption>Sprachvergleich: jede Übersetzung ist im Connected Mode mit dem deutschen Original verbunden.</figcaption></figure>
+    <figure><img src="img/be_page.jpg" alt="TYPO3 Seitenmodul der Startseite mit eigenen Inhaltselementen" loading="lazy"><figcaption>Eigene Inhaltselemente „Hero (Bühne)“ und „Teaser-Karten“ für Redakteure.</figcaption></figure>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Was umgesetzt wurde</h2>
+    <p class="sub">Aufgaben aus dem Alltag eines Website-Teams und wie das Projekt sie abdeckt.</p>
+    <table>
+      <thead><tr><th>Aufgabe</th><th>Umsetzung im Projekt</th></tr></thead>
+      <tbody>
+        <tr><td>Pflege internationaler Websites in TYPO3</td><td>Eigenes Sitepackage: Fluid-Templates, TypoScript, Site Sets, Backend-Layout, Seitenbaum und Site-Konfiguration</td></tr>
+        <tr><td>Launch von Länderwebsites, Übersetzungen koordinieren</td><td>Drei Sprachen mit eigenen URL-Schemata (<code>/de-de/</code>, <code>/en/</code>, <code>/fr-fr/</code>), Connected Mode, strikte Sprachfolge, dokumentierter Übersetzungs- und Freigabeprozess mit Glossar und Go-live-Checkliste</td></tr>
+        <tr><td>Redakteure schulen und beraten</td><td>Redakteursleitfaden auf Deutsch, Benutzergruppen je Rolle (Zentrale, Übersetzung EN, Übersetzung FR) mit eingeschränkten Sprachen und Inhaltselementen</td></tr>
+        <tr><td>Qualitätssicherung und Testing</td><td>Automatisches Prüfskript (Playwright + axe-core) für alle Seiten und Sprachen, QA-Checkliste und QA-Bericht</td></tr>
+        <tr><td>Web- und Content-Design, SEO</td><td>Responsives Design, Seitentitel und Beschreibungen je Sprache, Canonical, hreflang, XML-Sitemap, sprechende URLs, Alternativtexte</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Dokumentation</h2>
+    <ul class="docs">
+      <li><a href="https://github.com/sayamrina/fluvenco-typo3/blob/main/guides/Redakteursleitfaden.md">Redakteursleitfaden</a>: Inhalte, Seiten, Bilder, SEO-Felder, Freigabe, Rollen</li>
+      <li><a href="https://github.com/sayamrina/fluvenco-typo3/blob/main/guides/Uebersetzung-und-Freigabe.md">Übersetzung und Launch einer Länderwebsite</a>: Ablauf, Glossar, Go-live-Checkliste</li>
+      <li><a href="https://github.com/sayamrina/fluvenco-typo3/blob/main/guides/QA-Checkliste.md">QA-Checkliste</a> und <a href="https://github.com/sayamrina/fluvenco-typo3/blob/main/guides/QA-Bericht.md">QA-Bericht</a></li>
+    </ul>
+    <p class="note" style="color:var(--muted);font-size:14px">Die Online-Version ist ein statischer Export der TYPO3-Installation, damit sie ohne Server aufrufbar ist. Mit <code>composer install</code> und <code>Build/reset.sh</code> lässt sich die vollständige TYPO3-Instanz lokal aufbauen.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">Fluvenco ist ein fiktives Unternehmen, alle Inhalte sind erfunden. Projekt 2026 von Amrina · <a href="https://sayamrina.github.io/">Portfolio</a></div>
+</footer>
+</body>
+</html>

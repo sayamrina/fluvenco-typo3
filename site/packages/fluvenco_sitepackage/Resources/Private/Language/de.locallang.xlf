@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" target-language="de" datatype="plaintext" original="locallang.xlf" product-name="fluvenco_sitepackage">
+		<body>
+			<trans-unit id="skip"><source>Skip to content</source><target>Zum Inhalt springen</target></trans-unit>
+			<trans-unit id="menu"><source>Menu</source><target>Menü</target></trans-unit>
+			<trans-unit id="mainNav"><source>Main navigation</source><target>Hauptnavigation</target></trans-unit>
+			<trans-unit id="langNav"><source>Language</source><target>Sprache</target></trans-unit>
+			<trans-unit id="more"><source>Learn more</source><target>Mehr erfahren</target></trans-unit>
+			<trans-unit id="contact"><source>Contact</source><target>Kontakt</target></trans-unit>
+			<trans-unit id="legal"><source>Legal</source><target>Rechtliches</target></trans-unit>
+			<trans-unit id="claim"><source>Filtration, storage and sensor technology for hydraulic systems.</source><target>Filtration, Speicher und Sensorik für hydraulische Systeme.</target></trans-unit>
+			<trans-unit id="fictional"><source>Fluvenco is a fictional company. Project 2026 by Amrina Ali, built with TYPO3 13 LTS.</source><target>Fluvenco ist ein fiktives Unternehmen. Projekt 2026 von Amrina Ali, umgesetzt mit TYPO3 13 LTS.</target></trans-unit>
+		</body>
+	</file>
+</xliff>

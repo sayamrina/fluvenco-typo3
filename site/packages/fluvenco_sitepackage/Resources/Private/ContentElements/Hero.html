@@ -1,0 +1,23 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+<f:section name="Header" />
+<f:section name="Main">
+    <div class="hero">
+        <div class="container hero-inner">
+            <div class="hero-text">
+                <f:if condition="{data.subheader}"><p class="eyebrow">{data.subheader}</p></f:if>
+                <h1>{data.header}</h1>
+                <f:if condition="{data.bodytext}"><p class="lead">{data.bodytext}</p></f:if>
+                <f:if condition="{data.header_link}">
+                    <a class="btn" href="{f:uri.typolink(parameter: data.header_link)}"><f:translate key="LLL:EXT:fluvenco_sitepackage/Resources/Private/Language/locallang.xlf:more" /></a>
+                </f:if>
+            </div>
+            <f:for each="{files}" as="file" iteration="i">
+                <f:if condition="{i.isFirst}">
+                    <f:image image="{file}" class="hero-image" alt="{file.alternative}" />
+                </f:if>
+            </f:for>
+        </div>
+    </div>
+</f:section>
+</html>
