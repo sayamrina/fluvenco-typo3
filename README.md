@@ -61,4 +61,4 @@ docs/                         GitHub Pages: project page and static export of th
 
 ## Notes
 
-Fluvenco is a fictional company; all names, figures and addresses are invented. AI tools were used to support the coding process.
+Fluvenco is a fictional company; all names, figures and addresses are invented. This website was built by Amrina, with AI as a supporting tool for coding.
