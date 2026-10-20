@@ -60,6 +60,8 @@ with sync_playwright() as p:
                 target = url.path
                 if target not in seen and target not in queue:
                     queue.append(target)
+        # Measure the final state, not a frame of an entry animation
+        page.evaluate("() => Promise.all(document.getAnimations().map(a => a.finished))")
         page.add_script_tag(content=AXE)
         axe = page.evaluate("async () => (await axe.run(document, {runOnly: ['wcag2a', 'wcag2aa', 'wcag21aa']})).violations.map(v => ({id: v.id, impact: v.impact, n: v.nodes.length}))")
         row["axe"] = len(axe)
