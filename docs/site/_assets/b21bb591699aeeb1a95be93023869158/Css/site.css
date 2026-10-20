@@ -24,6 +24,12 @@ address { font-style: normal; }
 .skip-link { position: absolute; left: -999px; top: 8px; background: var(--navy); color: #fff; padding: 8px 14px; z-index: 100; border-radius: 6px; }
 .skip-link:focus { left: 8px; }
 
+/* Portfolio banner */
+.project-banner { background: var(--teal); color: #fff; font-size: 14px; line-height: 1.45; }
+.project-banner p { margin: 0; padding: 9px 0; text-align: center; }
+.project-banner a { color: #fff; font-weight: 700; white-space: nowrap; margin-left: 6px; }
+.project-banner a:hover { color: #dff7f5; }
+
 /* Header */
 .site-header { position: sticky; top: 0; z-index: 50; background: rgba(255, 255, 255, .96); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
 .header-inner { display: flex; align-items: center; gap: 24px; min-height: 76px; }

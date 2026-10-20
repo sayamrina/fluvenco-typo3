@@ -13,6 +13,8 @@
 			<trans-unit id="fictional"><source>Fluvenco is a fictional company. Project 2026 by Amrina Ali, built with TYPO3 13 LTS.</source><target>Fluvenco ist ein fiktives Unternehmen. Projekt 2026 von Amrina Ali, umgesetzt mit TYPO3 13 LTS.</target></trans-unit>
 			<trans-unit id="breadcrumb"><source>You are here</source><target>Sie sind hier</target></trans-unit>
 			<trans-unit id="footerNav"><source>Explore</source><target>Entdecken</target></trans-unit>
+			<trans-unit id="bannerText"><source>This website was developed by Amrina as a portfolio project. Fluvenco is a fictional company.</source><target>Diese Website wurde von Amrina als Portfolio-Projekt entwickelt. Fluvenco ist ein fiktives Unternehmen.</target></trans-unit>
+			<trans-unit id="bannerLink"><source>View portfolio</source><target>Zum Portfolio</target></trans-unit>
 		</body>
 	</file>
 </xliff>
