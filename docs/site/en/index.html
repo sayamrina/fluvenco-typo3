@@ -27,10 +27,10 @@
 
 <link rel="canonical" href="https://sayamrina.github.io/fluvenco-typo3/site/en/">
 
-<link rel="alternate" hreflang="de-DE" href="https://sayamrina.github.io/fluvenco-typo3/site/de-de/">
 <link rel="alternate" hreflang="en" href="https://sayamrina.github.io/fluvenco-typo3/site/en/">
+<link rel="alternate" hreflang="de-DE" href="https://sayamrina.github.io/fluvenco-typo3/site/de-de/">
 <link rel="alternate" hreflang="fr-FR" href="https://sayamrina.github.io/fluvenco-typo3/site/fr-fr/">
-<link rel="alternate" hreflang="x-default" href="https://sayamrina.github.io/fluvenco-typo3/site/de-de/">
+<link rel="alternate" hreflang="x-default" href="https://sayamrina.github.io/fluvenco-typo3/site/en/">
 </head>
 <body>
 
@@ -41,10 +41,6 @@
         <a class="brand" href="/fluvenco-typo3/site/en/">
             <img src="/fluvenco-typo3/site/_assets/b21bb591699aeeb1a95be93023869158/Images/logo.svg" alt="Fluvenco" width="168" height="34">
         </a>
-        <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">
-            <span class="sr-only">Menu</span>
-            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-        </button>
         <nav id="main-nav" class="main-nav" aria-label="Main navigation">
             <ul>
                 
@@ -104,27 +100,32 @@
             </ul>
         </nav>
         <nav class="lang-nav" aria-label="Language">
+            <svg class="globe" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg>
             <ul>
                 
                     
-                        <li><a href="/fluvenco-typo3/site/de-de/" hreflang="de-DE" lang="de-DE" class="" title="Deutsch">DE</a></li>
+                        <li><a href="/fluvenco-typo3/site/en/" hreflang="en" lang="en" class="active" aria-current="true" title="English"><span aria-hidden="true">EN</span><span class="sr-only">English</span></a></li>
                     
                 
                     
-                        <li><a href="/fluvenco-typo3/site/en/" hreflang="en" lang="en" class="active" aria-current="true" title="English">EN</a></li>
+                        <li><a href="/fluvenco-typo3/site/de-de/" hreflang="de-DE" lang="de-DE" class="" title="Deutsch"><span aria-hidden="true">DE</span><span class="sr-only">Deutsch</span></a></li>
                     
                 
                     
-                        <li><a href="/fluvenco-typo3/site/fr-fr/" hreflang="fr-FR" lang="fr-FR" class="" title="Français">FR</a></li>
+                        <li><a href="/fluvenco-typo3/site/fr-fr/" hreflang="fr-FR" lang="fr-FR" class="" title="Français"><span aria-hidden="true">FR</span><span class="sr-only">Français</span></a></li>
                     
                 
             </ul>
         </nav>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+            <span class="sr-only">Menu</span>
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </button>
     </div>
 </header>
 
 
-<main id="main">
+<main id="main" class="is-home">
     
     
     <div class="content">
@@ -132,8 +133,6 @@
     
 
             <div id="c1" class="frame frame-default frame-type-fluvenco_hero frame-layout-0">
-                
-                    <a id="c37"></a>
                 
                 
                     
@@ -181,8 +180,6 @@
     
 
             <div id="c2" class="frame frame-default frame-type-fluvenco_cards frame-layout-0">
-                
-                    <a id="c38"></a>
                 
                 
                     
@@ -298,8 +295,6 @@
     
 
             <div id="c3" class="frame frame-default frame-type-textmedia frame-layout-0">
-                
-                    <a id="c39"></a>
                 
                 
                     
@@ -426,8 +421,6 @@
 
             <div id="c4" class="frame frame-default frame-type-textmedia frame-layout-0">
                 
-                    <a id="c40"></a>
-                
                 
                     
 
@@ -550,9 +543,7 @@
 
     
 
-            <div id="c5" class="frame frame-default frame-type-menu_subpages frame-layout-0">
-                
-                    <a id="c41"></a>
+            <div id="c5" class="frame frame-default frame-type-fluvenco_cards frame-layout-0">
                 
                 
                     
@@ -586,6 +577,21 @@
 
             
 
+    
+            
+                
+
+    
+            <h3 class="">
+                Company news
+            </h3>
+        
+
+
+
+            
+        
+
 
 
             
@@ -599,25 +605,29 @@
 
                 
                 
-
-    
-        <ul>
-            
-                <li>
-                    <a href="/fluvenco-typo3/site/en/news/new-website-france" title="New website for France launched">
-                        <span>New website for France launched</span>
-                    </a>
-                </li>
-            
-                <li>
-                    <a href="/fluvenco-typo3/site/en/news/sensor-io-link" title="Pressure sensors now with IO-Link">
-                        <span>Pressure sensors now with IO-Link</span>
-                    </a>
-                </li>
-            
-        </ul>
-    
-
+    <ul class="cards">
+        
+            <li class="card">
+                
+                    <img loading="lazy" src="/fluvenco-typo3/site/fileadmin/fluvenco/globe.svg" width="800" height="500" alt="" />
+                
+                <div class="card-body">
+                    <h3><a href="/fluvenco-typo3/site/en/news/new-website-france">New website for France launched</a></h3>
+                    <p>Customers in France can now find all content in French.</p>
+                </div>
+            </li>
+        
+            <li class="card">
+                
+                    <img loading="lazy" src="/fluvenco-typo3/site/fileadmin/fluvenco/sensor.svg" width="800" height="500" alt="" />
+                
+                <div class="card-body">
+                    <h3><a href="/fluvenco-typo3/site/en/news/sensor-io-link">Pressure sensors now with IO-Link</a></h3>
+                    <p>The new sensor generation connects directly to digital systems.</p>
+                </div>
+            </li>
+        
+    </ul>
 
                 
                     
@@ -642,13 +652,33 @@
 
 <footer class="site-footer">
     <div class="container footer-grid">
-        <div>
+        <div class="footer-brand">
             <img src="/fluvenco-typo3/site/_assets/b21bb591699aeeb1a95be93023869158/Images/logo-white.svg" alt="Fluvenco" width="147" height="30">
             <p>Filtration, storage and sensor technology for hydraulic systems.</p>
         </div>
+        <nav aria-label="Explore">
+            <p class="footer-title">Explore</p>
+            <ul>
+                
+                    <li><a href="/fluvenco-typo3/site/en/products">Products</a></li>
+                
+                    <li><a href="/fluvenco-typo3/site/en/industries">Industries</a></li>
+                
+                    <li><a href="/fluvenco-typo3/site/en/service-training">Service &amp; Training</a></li>
+                
+                    <li><a href="/fluvenco-typo3/site/en/news">News</a></li>
+                
+                    <li><a href="/fluvenco-typo3/site/en/company">Company</a></li>
+                
+                    <li><a href="/fluvenco-typo3/site/en/careers">Careers</a></li>
+                
+                    <li><a href="/fluvenco-typo3/site/en/contact">Contact</a></li>
+                
+            </ul>
+        </nav>
         <div>
             <p class="footer-title">Contact</p>
-            <p>Fluvenco Fluidtechnik GmbH<br>Musterstraße 1<br>66111 Saarbrücken</p>
+            <address>Fluvenco Fluidtechnik GmbH<br>Musterstraße 1<br>66111 Saarbrücken<br><a href="mailto:info@fluvenco.example">info@fluvenco.example</a></address>
         </div>
         <nav aria-label="Legal">
             <p class="footer-title">Legal</p>

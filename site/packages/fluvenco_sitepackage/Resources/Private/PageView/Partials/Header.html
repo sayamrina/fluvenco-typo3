@@ -4,10 +4,6 @@
         <a class="brand" href="{f:uri.page(pageUid: site.rootPageId)}">
             <img src="{f:uri.resource(path: 'EXT:fluvenco_sitepackage/Resources/Public/Images/logo.svg')}" alt="Fluvenco" width="168" height="34">
         </a>
-        <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">
-            <span class="sr-only"><f:translate key="LLL:EXT:fluvenco_sitepackage/Resources/Private/Language/locallang.xlf:menu" /></span>
-            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-        </button>
         <nav id="main-nav" class="main-nav" aria-label="{f:translate(key: 'LLL:EXT:fluvenco_sitepackage/Resources/Private/Language/locallang.xlf:mainNav')}">
             <ul>
                 <f:for each="{mainNavigation}" as="item">
@@ -25,14 +21,19 @@
             </ul>
         </nav>
         <nav class="lang-nav" aria-label="{f:translate(key: 'LLL:EXT:fluvenco_sitepackage/Resources/Private/Language/locallang.xlf:langNav')}">
+            <svg class="globe" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg>
             <ul>
                 <f:for each="{languageNavigation}" as="lang">
                     <f:if condition="{lang.available}">
-                        <li><a href="{lang.link}" hreflang="{lang.hreflang}" lang="{lang.hreflang}" class="{f:if(condition: lang.active, then: 'active')}"{f:if(condition: lang.active, then: ' aria-current="true"')} title="{lang.title}">{lang.twoLetterIsoCode -> f:format.case(mode: 'upper')}</a></li>
+                        <li><a href="{lang.link}" hreflang="{lang.hreflang}" lang="{lang.hreflang}" class="{f:if(condition: lang.active, then: 'active')}"{f:if(condition: lang.active, then: ' aria-current="true"')} title="{lang.title}"><span aria-hidden="true">{lang.twoLetterIsoCode -> f:format.case(mode: 'upper')}</span><span class="sr-only">{lang.title}</span></a></li>
                     </f:if>
                 </f:for>
             </ul>
         </nav>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+            <span class="sr-only"><f:translate key="LLL:EXT:fluvenco_sitepackage/Resources/Private/Language/locallang.xlf:menu" /></span>
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </button>
     </div>
 </header>
 </html>

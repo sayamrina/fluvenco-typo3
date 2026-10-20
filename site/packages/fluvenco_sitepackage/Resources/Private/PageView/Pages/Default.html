@@ -2,18 +2,25 @@
 <f:layout name="Default" />
 <f:section name="Main">
     <f:if condition="{breadcrumb -> f:count()} > 1">
-        <nav class="breadcrumb container" aria-label="Breadcrumb">
-            <ol>
-                <f:for each="{breadcrumb}" as="item" iteration="i">
-                    <li>
-                        <f:if condition="{i.isLast}">
-                            <f:then><span aria-current="page">{item.title}</span></f:then>
-                            <f:else><a href="{item.link}">{item.title}</a></f:else>
-                        </f:if>
-                    </li>
-                </f:for>
-            </ol>
-        </nav>
+        <div class="page-band">
+            <nav class="breadcrumb container" aria-label="{f:translate(key: 'LLL:EXT:fluvenco_sitepackage/Resources/Private/Language/locallang.xlf:breadcrumb')}">
+                <ol>
+                    <f:for each="{breadcrumb}" as="item" iteration="i">
+                        <li>
+                            <f:if condition="{i.isLast}">
+                                <f:then><span aria-current="page">{item.title}</span></f:then>
+                                <f:else>
+                                    <f:if condition="{item.data.doktype} == 254">
+                                        <f:then><span>{item.title}</span></f:then>
+                                        <f:else><a href="{item.link}">{item.title}</a></f:else>
+                                    </f:if>
+                                </f:else>
+                            </f:if>
+                        </li>
+                    </f:for>
+                </ol>
+            </nav>
+        </div>
     </f:if>
     <div class="content">
         <f:cObject typoscriptObjectPath="lib.content" />

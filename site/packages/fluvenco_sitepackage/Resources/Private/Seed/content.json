@@ -97,13 +97,18 @@
     "imageorient": 25
    },
    {
-    "CType": "menu_subpages",
+    "CType": "fluvenco_cards",
     "header": {
      "de": "Aktuelles",
      "en": "Latest news",
      "fr": "Actualités"
     },
-    "pages": "@news"
+    "pages": "@news",
+    "subheader": {
+     "de": "Neues aus dem Unternehmen",
+     "en": "Company news",
+     "fr": "Nouvelles de l’entreprise"
+    }
    }
   ]
  },
@@ -601,13 +606,26 @@
    },
    "content": [
     {
-     "CType": "menu_subpages",
+     "CType": "text",
      "header": {
       "de": "News",
       "en": "News",
       "fr": "Actualités"
      },
      "header_layout": 1,
+     "bodytext": {
+      "de": "<p>Neuigkeiten zu Produkten, Standorten und unserer Website.</p>",
+      "en": "<p>Updates on our products, sites and website.</p>",
+      "fr": "<p>Nouveautés sur nos produits, nos sites et notre site web.</p>"
+     }
+    },
+    {
+     "CType": "fluvenco_cards",
+     "header": {
+      "de": "Alle Meldungen",
+      "en": "All articles",
+      "fr": "Tous les articles"
+     },
      "pages": "@news"
     }
    ],
@@ -656,7 +674,8 @@
         "fr": "<p>Depuis aujourd’hui, notre site est également disponible en français. Toutes les pages produits ont été traduites et vérifiées par notre équipe de Lyon.</p><p>Nos clients en France, en Belgique et en Suisse trouvent ainsi les informations produits, les caractéristiques techniques et leurs interlocuteurs dans leur langue.</p>"
        }
       }
-     ]
+     ],
+     "media": "globe.svg"
     },
     {
      "key": "news2",
@@ -702,7 +721,8 @@
         "fr": "<p>Nos capteurs de pression sont désormais disponibles avec interface IO-Link. Mesures et données de diagnostic arrivent directement à la commande. <a href=\"t3://page?uid=@sensor\">Voir les capteurs</a></p>"
        }
       }
-     ]
+     ],
+     "media": "sensor.svg"
     }
    ]
   },

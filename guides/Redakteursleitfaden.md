@@ -6,7 +6,7 @@ Dieser Leitfaden richtet sich an Redakteurinnen und Redakteure in der Zentrale u
 
 1. Backend aufrufen: `https://<domain>/typo3/` und mit dem eigenen Benutzerkonto anmelden.
 2. Links im Modulmenü **Web > Seite** öffnen. In der Mitte erscheint der Seitenbaum, rechts der Inhalt der gewählten Seite.
-3. Über **Sprache** (oben im Seitenmodul) zwischen Deutsch, Englisch und Französisch wechseln. Die Ansicht **Sprachvergleich** zeigt alle Sprachen nebeneinander.
+3. Über **Sprache** (oben im Seitenmodul) zwischen Englisch (Hauptversion), Deutsch und Französisch wechseln. Die Ansicht **Sprachvergleich** zeigt alle Sprachen nebeneinander.
 
 ## 2. Inhalte bearbeiten
 
@@ -28,7 +28,7 @@ Erlaubte Inhaltselemente (die Auswahl ist bewusst begrenzt, damit das Layout ein
 ## 3. Neue Seite anlegen
 
 1. Im Seitenbaum oben das Symbol **Neue Seite** auf die gewünschte Position ziehen.
-2. Titel eingeben. Die URL (Feld **URL-Segment**) wird automatisch erzeugt. Bitte kurz, klein geschrieben und ohne Umlaute halten, z. B. `/produkte/filtertechnik`.
+2. Titel eingeben. Die URL (Feld **URL-Segment**) wird automatisch erzeugt. Bitte kurz und klein geschrieben halten, z. B. `/products/filtration` (Deutsch: `/produkte/filtertechnik`).
 3. Reiter **SEO** ausfüllen (siehe Abschnitt 5).
 4. Reiter **Ressourcen > Medien**: ein Bild für die Teaser-Karte hinterlegen.
 5. Seite speichern. Neue Seiten sind zunächst **verborgen**. Erst nach der Freigabe (siehe Abschnitt 6) sichtbar schalten.
@@ -48,7 +48,7 @@ Erlaubte Inhaltselemente (die Auswahl ist bewusst begrenzt, damit das Layout ein
 | URL-Segment | kurz, sprechend, je Sprache in der jeweiligen Sprache |
 | Überschrift H1 | genau eine pro Seite (das erste Element mit Layout *Überschrift 1*) |
 
-Canonical-Links, `hreflang`-Angaben für alle Sprachen und die XML-Sitemap (`/de-de/sitemap.xml`) erzeugt TYPO3 automatisch.
+Canonical-Links, `hreflang`-Angaben für alle Sprachen und die XML-Sitemap (`/en/sitemap.xml`) erzeugt TYPO3 automatisch.
 
 ## 6. Freigabe
 
@@ -62,7 +62,7 @@ Canonical-Links, `hreflang`-Angaben für alle Sprachen und die XML-Sitemap (`/de
 | Benutzergruppe | Rechte |
 |---|---|
 | Redaktion (alle Sprachen) | Seiten und Inhalte in allen Sprachen bearbeiten |
-| Übersetzung Englisch | nur englische Inhalte bearbeiten |
+| Übersetzung Deutsch | nur deutsche Inhalte bearbeiten |
 | Übersetzung Französisch | nur französische Inhalte bearbeiten |
 
 Alle Gruppen sehen nur die freigegebenen Inhaltselemente und Felder. Administratoren verwalten Templates, Seitenkonfiguration und Benutzer.
@@ -71,6 +71,6 @@ Alle Gruppen sehen nur die freigegebenen Inhaltselemente und Felder. Administrat
 
 **Ich sehe meine Änderung nicht auf der Website.** Seite im Backend über das Blitz-Symbol *Cache leeren* oder kurz warten. Ist die Seite eventuell noch verborgen?
 
-**Ein Inhalt ist nur auf Deutsch da.** Die Übersetzung fehlt. Siehe `Uebersetzung-und-Freigabe.md`.
+**Ein Inhalt ist nur auf Englisch da.** Die Übersetzung fehlt. Siehe `Uebersetzung-und-Freigabe.md`.
 
 **Ich habe etwas gelöscht.** Im Modul **Web > Papierkorb** lässt sich der Inhalt wiederherstellen.

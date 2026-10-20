@@ -1,13 +1,21 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 <footer class="site-footer">
     <div class="container footer-grid">
-        <div>
+        <div class="footer-brand">
             <img src="{f:uri.resource(path: 'EXT:fluvenco_sitepackage/Resources/Public/Images/logo-white.svg')}" alt="Fluvenco" width="147" height="30">
             <p><f:translate key="LLL:EXT:fluvenco_sitepackage/Resources/Private/Language/locallang.xlf:claim" /></p>
         </div>
+        <nav aria-label="{f:translate(key: 'LLL:EXT:fluvenco_sitepackage/Resources/Private/Language/locallang.xlf:footerNav')}">
+            <p class="footer-title"><f:translate key="LLL:EXT:fluvenco_sitepackage/Resources/Private/Language/locallang.xlf:footerNav" /></p>
+            <ul>
+                <f:for each="{mainNavigation}" as="item">
+                    <li><a href="{item.link}">{item.title}</a></li>
+                </f:for>
+            </ul>
+        </nav>
         <div>
             <p class="footer-title"><f:translate key="LLL:EXT:fluvenco_sitepackage/Resources/Private/Language/locallang.xlf:contact" /></p>
-            <p>Fluvenco Fluidtechnik GmbH<br>Musterstraße 1<br>66111 Saarbrücken</p>
+            <address>Fluvenco Fluidtechnik GmbH<br>Musterstraße 1<br>66111 Saarbrücken<br><a href="mailto:info@fluvenco.example">info@fluvenco.example</a></address>
         </div>
         <nav aria-label="{f:translate(key: 'LLL:EXT:fluvenco_sitepackage/Resources/Private/Language/locallang.xlf:legal')}">
             <p class="footer-title"><f:translate key="LLL:EXT:fluvenco_sitepackage/Resources/Private/Language/locallang.xlf:legal" /></p>

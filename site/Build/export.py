@@ -15,7 +15,7 @@ SOURCE = sys.argv[1].rstrip("/")
 OUT = Path(sys.argv[2])
 TARGET = sys.argv[3].rstrip("/") + "/"
 TARGET_PATH = urllib.parse.urlparse(TARGET).path
-START = ["/de-de/", "/en/", "/fr-fr/"]
+START = ["/en/", "/de-de/", "/fr-fr/"]
 ASSET = re.compile(r'(?:href|src)="(/(?:_assets|fileadmin|typo3temp)/[^"?#]+)')
 LINK = re.compile(r'href="(/[^"#?]*)"')
 
@@ -56,8 +56,8 @@ for asset in sorted(assets):
 
 (OUT / "index.html").write_text(
     f'<!doctype html><meta charset="utf-8"><title>Fluvenco</title>'
-    f'<meta http-equiv="refresh" content="0; url={TARGET}de-de/"><link rel="canonical" href="{TARGET}de-de/">'
-    f'<a href="{TARGET}de-de/">Fluvenco</a>'
+    f'<meta http-equiv="refresh" content="0; url={START[0].strip("/")}/"><link rel="canonical" href="{TARGET}{START[0].strip("/")}/">'
+    f'<a href="{START[0].strip("/")}/">Fluvenco</a>'
 )
 urls = "".join(f"<url><loc>{TARGET}{p.lstrip('/')}</loc></url>" for p in pages)
 (OUT / "sitemap.xml").write_text(

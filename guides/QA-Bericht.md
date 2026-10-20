@@ -6,23 +6,9 @@ Geprüfte URLs: **45** · erfolgreich (HTTP 200): **45** · gefundene Probleme: 
 
 | Seite | Sprache | Titel | h1 | hreflang | axe-Verstöße |
 |---|---|---|---|---|---|
-| `/de-de/` | de-DE | Fluvenco Fluidtechnik · Fluvenco Fluidtechnik: Filtration, Speicher und Sensorik | 1 | 4 | 0 |
 | `/en/` | en | Fluvenco Fluid Technology · Fluvenco Fluid Technology: filtration, accumulators and sensors | 1 | 4 | 0 |
+| `/de-de/` | de-DE | Fluvenco Fluidtechnik · Fluvenco Fluidtechnik: Filtration, Speicher und Sensorik | 1 | 4 | 0 |
 | `/fr-fr/` | fr-FR | Fluvenco Technologie des fluides · Fluvenco : filtration, accumulateurs et capteurs | 1 | 4 | 0 |
-| `/de-de/produkte` | de-DE | Fluvenco Fluidtechnik · Produkte | 1 | 4 | 0 |
-| `/de-de/produkte/filtertechnik` | de-DE | Fluvenco Fluidtechnik · Filtertechnik | 1 | 4 | 0 |
-| `/de-de/produkte/hydrospeicher` | de-DE | Fluvenco Fluidtechnik · Hydrospeicher | 1 | 4 | 0 |
-| `/de-de/produkte/sensorik` | de-DE | Fluvenco Fluidtechnik · Sensorik | 1 | 4 | 0 |
-| `/de-de/branchen` | de-DE | Fluvenco Fluidtechnik · Branchen | 1 | 4 | 0 |
-| `/de-de/service-schulungen` | de-DE | Fluvenco Fluidtechnik · Service & Schulungen | 1 | 4 | 0 |
-| `/de-de/news` | de-DE | Fluvenco Fluidtechnik · News | 1 | 4 | 0 |
-| `/de-de/news/neue-website-frankreich` | de-DE | Fluvenco Fluidtechnik · Neue Website für Frankreich gestartet | 1 | 4 | 0 |
-| `/de-de/news/sensor-io-link` | de-DE | Fluvenco Fluidtechnik · Drucksensoren jetzt mit IO-Link | 1 | 4 | 0 |
-| `/de-de/unternehmen` | de-DE | Fluvenco Fluidtechnik · Unternehmen | 1 | 4 | 0 |
-| `/de-de/karriere` | de-DE | Fluvenco Fluidtechnik · Karriere | 1 | 4 | 0 |
-| `/de-de/kontakt` | de-DE | Fluvenco Fluidtechnik · Kontakt | 1 | 4 | 0 |
-| `/de-de/impressum` | de-DE | Fluvenco Fluidtechnik · Impressum | 1 | 4 | 0 |
-| `/de-de/datenschutz` | de-DE | Fluvenco Fluidtechnik · Datenschutz | 1 | 4 | 0 |
 | `/en/products` | en | Fluvenco Fluid Technology · Products | 1 | 4 | 0 |
 | `/en/products/filtration` | en | Fluvenco Fluid Technology · Filtration | 1 | 4 | 0 |
 | `/en/products/accumulators` | en | Fluvenco Fluid Technology · Accumulators | 1 | 4 | 0 |
@@ -37,6 +23,20 @@ Geprüfte URLs: **45** · erfolgreich (HTTP 200): **45** · gefundene Probleme: 
 | `/en/contact` | en | Fluvenco Fluid Technology · Contact | 1 | 4 | 0 |
 | `/en/legal-notice` | en | Fluvenco Fluid Technology · Legal notice | 1 | 4 | 0 |
 | `/en/privacy` | en | Fluvenco Fluid Technology · Privacy | 1 | 4 | 0 |
+| `/de-de/produkte` | de-DE | Fluvenco Fluidtechnik · Produkte | 1 | 4 | 0 |
+| `/de-de/produkte/filtertechnik` | de-DE | Fluvenco Fluidtechnik · Filtertechnik | 1 | 4 | 0 |
+| `/de-de/produkte/hydrospeicher` | de-DE | Fluvenco Fluidtechnik · Hydrospeicher | 1 | 4 | 0 |
+| `/de-de/produkte/sensorik` | de-DE | Fluvenco Fluidtechnik · Sensorik | 1 | 4 | 0 |
+| `/de-de/branchen` | de-DE | Fluvenco Fluidtechnik · Branchen | 1 | 4 | 0 |
+| `/de-de/service-schulungen` | de-DE | Fluvenco Fluidtechnik · Service & Schulungen | 1 | 4 | 0 |
+| `/de-de/news` | de-DE | Fluvenco Fluidtechnik · News | 1 | 4 | 0 |
+| `/de-de/news/neue-website-frankreich` | de-DE | Fluvenco Fluidtechnik · Neue Website für Frankreich gestartet | 1 | 4 | 0 |
+| `/de-de/news/sensor-io-link` | de-DE | Fluvenco Fluidtechnik · Drucksensoren jetzt mit IO-Link | 1 | 4 | 0 |
+| `/de-de/unternehmen` | de-DE | Fluvenco Fluidtechnik · Unternehmen | 1 | 4 | 0 |
+| `/de-de/karriere` | de-DE | Fluvenco Fluidtechnik · Karriere | 1 | 4 | 0 |
+| `/de-de/kontakt` | de-DE | Fluvenco Fluidtechnik · Kontakt | 1 | 4 | 0 |
+| `/de-de/impressum` | de-DE | Fluvenco Fluidtechnik · Impressum | 1 | 4 | 0 |
+| `/de-de/datenschutz` | de-DE | Fluvenco Fluidtechnik · Datenschutz | 1 | 4 | 0 |
 | `/fr-fr/produits` | fr-FR | Fluvenco Technologie des fluides · Produits | 1 | 4 | 0 |
 | `/fr-fr/produits/filtration` | fr-FR | Fluvenco Technologie des fluides · Filtration | 1 | 4 | 0 |
 | `/fr-fr/produits/accumulateurs` | fr-FR | Fluvenco Technologie des fluides · Accumulateurs | 1 | 4 | 0 |

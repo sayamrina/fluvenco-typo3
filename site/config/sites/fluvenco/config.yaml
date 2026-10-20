@@ -1,4 +1,4 @@
-base: 'https://sayamrina.github.io/fluvenco-typo3/'
+base: 'https://sayamrina.github.io/fluvenco-typo3/site/'
 baseVariants:
   -
     base: 'http://127.0.0.1:8080/'
@@ -6,30 +6,30 @@ baseVariants:
 rootPageId: 1
 dependencies:
   - fluvenco/site
-websiteTitle: 'Fluvenco Fluidtechnik'
+websiteTitle: 'Fluvenco Fluid Technology'
 languages:
-  -
-    title: Deutsch
-    enabled: true
-    languageId: 0
-    base: /de-de/
-    locale: de_DE.UTF-8
-    navigationTitle: Deutsch
-    hreflang: de-DE
-    flag: de
-    websiteTitle: 'Fluvenco Fluidtechnik'
   -
     title: English
     enabled: true
-    languageId: 1
+    languageId: 0
     base: /en/
     locale: en_GB.UTF-8
     navigationTitle: English
     hreflang: en
     flag: gb
+    websiteTitle: 'Fluvenco Fluid Technology'
+  -
+    title: Deutsch
+    enabled: true
+    languageId: 1
+    base: /de-de/
+    locale: de_DE.UTF-8
+    navigationTitle: Deutsch
+    hreflang: de-DE
+    flag: de
     fallbackType: strict
     fallbacks: ''
-    websiteTitle: 'Fluvenco Fluid Technology'
+    websiteTitle: 'Fluvenco Fluidtechnik'
   -
     title: Français
     enabled: true

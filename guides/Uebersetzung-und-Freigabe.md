@@ -4,10 +4,10 @@ So wird eine neue Sprache oder Länderwebsite eingeführt und gepflegt. Beispiel
 
 ## Aufbau
 
-- **Ein Seitenbaum für alle Sprachen.** Deutsch ist die Standardsprache, Englisch und Französisch sind Übersetzungen.
-- **Connected Mode:** Jede Übersetzung ist mit ihrem deutschen Original verbunden. Ändert sich die Struktur auf Deutsch, sieht die Länderredaktion sofort, welche Inhalte fehlen oder veraltet sind.
+- **Ein Seitenbaum für alle Sprachen.** Englisch ist die Standardsprache (internationale Hauptversion), Deutsch und Französisch sind Übersetzungen.
+- **Connected Mode:** Jede Übersetzung ist mit ihrem englischen Original verbunden. Ändert sich die Struktur in der Hauptversion, sieht die Länderredaktion sofort, welche Inhalte fehlen oder veraltet sind.
 - **Strikte Sprachfolge:** Ist eine Seite nicht übersetzt, wird sie in dieser Sprache nicht angezeigt. Es erscheinen also keine gemischten Seiten aus zwei Sprachen.
-- **URL-Schema:** `/de-de/`, `/en/`, `/fr-fr/`, wobei die URL-Segmente in der jeweiligen Sprache sind (z. B. `/fr-fr/produits/capteurs`).
+- **URL-Schema:** `/en/`, `/de-de/`, `/fr-fr/`, wobei die URL-Segmente in der jeweiligen Sprache sind (z. B. `/fr-fr/produits/capteurs`).
 
 ## Neue Sprache anlegen (Administrator)
 
@@ -19,7 +19,7 @@ So wird eine neue Sprache oder Länderwebsite eingeführt und gepflegt. Beispiel
 
 | Schritt | Wer | Was |
 |---|---|---|
-| 1 | Zentrale Redaktion | Deutsche Seite fertigstellen und freigeben |
+| 1 | Zentrale Redaktion | Englische Seite (Hauptversion) fertigstellen und freigeben |
 | 2 | Zentrale Redaktion | Im Seitenmodul *Sprachvergleich* die Seite für die neue Sprache übersetzen lassen (Schaltfläche **Übersetzen**). TYPO3 legt verbundene Kopien an, die mit `[Translate to …]` markiert und verborgen sind |
 | 3 | Länderredaktion | Texte, URL-Segment, SEO-Titel, Beschreibung und Alternativtexte übersetzen. Fachbegriffe nach Glossar |
 | 4 | Fachabteilung im Land | Technische Daten und Begriffe prüfen |
@@ -27,13 +27,13 @@ So wird eine neue Sprache oder Länderwebsite eingeführt und gepflegt. Beispiel
 
 ## Glossar (Auszug)
 
-| Deutsch | Englisch | Französisch |
+| Englisch | Deutsch | Französisch |
 |---|---|---|
-| Hydrospeicher | accumulator | accumulateur |
-| Filterelement | filter element | élément filtrant |
-| Rücklauffilter | return line filter | filtre de retour |
-| Zustandsüberwachung | condition monitoring | surveillance d’état |
-| Betriebsdruck | operating pressure | pression de service |
+| accumulator | Hydrospeicher | accumulateur |
+| filter element | Filterelement | élément filtrant |
+| return line filter | Rücklauffilter | filtre de retour |
+| condition monitoring | Zustandsüberwachung | surveillance d’état |
+| operating pressure | Betriebsdruck | pression de service |
 
 ## Checkliste Go-live einer Länderwebsite
 

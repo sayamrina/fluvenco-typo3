@@ -11,6 +11,8 @@
 			<trans-unit id="legal"><source>Legal</source></trans-unit>
 			<trans-unit id="claim"><source>Filtration, storage and sensor technology for hydraulic systems.</source></trans-unit>
 			<trans-unit id="fictional"><source>Fluvenco is a fictional company. Project 2026 by Amrina Ali, built with TYPO3 13 LTS.</source></trans-unit>
+			<trans-unit id="breadcrumb"><source>You are here</source></trans-unit>
+			<trans-unit id="footerNav"><source>Explore</source></trans-unit>
 		</body>
 	</file>
 </xliff>

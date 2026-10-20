@@ -22,7 +22,8 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
  */
 final class SeedCommand extends Command
 {
-    private const LANGUAGES = ['en' => 1, 'fr' => 2];
+    private const DEFAULT_LANGUAGE = 'en';
+    private const LANGUAGES = ['de' => 1, 'fr' => 2];
 
     private array $pageUids = [];
     private array $fileUids = [];
@@ -55,9 +56,9 @@ final class SeedCommand extends Command
         $this->removeSetupTemplate();
         $this->importImages();
 
-        // 1. Pages in the default language (German)
+        // 1. Pages in the default language (English)
         $this->pageUids['root'] = 1;
-        $this->updateRecord('pages', 1, $this->pageFields($site['root'], 'de') + ['is_siteroot' => 1]);
+        $this->updateRecord('pages', 1, $this->pageFields($site['root'], self::DEFAULT_LANGUAGE) + ['is_siteroot' => 1]);
         $this->createPages($site['pages'], 1);
         $io->writeln(sprintf('Pages created: %d', count($this->pageUids)));
 
@@ -73,13 +74,13 @@ final class SeedCommand extends Command
         }
         $io->writeln(sprintf('Content elements created: %d', $contentCount));
 
-        // 3. Translations (connected mode: every record points to its German original)
+        // 3. Translations (connected mode: every record points to its English original)
         foreach (self::LANGUAGES as $lang => $languageId) {
             foreach ($tree as $page) {
                 $this->translatePage($page, $lang, $languageId);
             }
         }
-        $io->writeln('Translations created: English, French');
+        $io->writeln('Translations created: German, French');
 
         $this->createEditorGroups();
         $this->writeSiteSettings();
@@ -92,12 +93,12 @@ final class SeedCommand extends Command
     {
         $previousUid = null;
         foreach ($pages as $page) {
-            $fields = $this->pageFields($page, 'de');
+            $fields = $this->pageFields($page, self::DEFAULT_LANGUAGE);
             $fields['doktype'] = $page['doktype'] ?? 1;
             $fields['hidden'] = 0;
             // A negative pid places the page after its previous sibling, so the menu keeps the JSON order
             $fields['pid'] = $previousUid ? -$previousUid : $parentUid;
-            $uid = $this->insertRecord('pages', $fields, $page['media'] ?? null, 'media', $page['title']['de'], null);
+            $uid = $this->insertRecord('pages', $fields, $page['media'] ?? null, 'media', $page['title'][self::DEFAULT_LANGUAGE], null);
             $this->pageUids[$page['key']] = $uid;
             $previousUid = $uid;
             if (!empty($page['children'])) {
@@ -108,7 +109,7 @@ final class SeedCommand extends Command
 
     private function createContent(array $element, int $pageUid, ?int $previousUid): int
     {
-        $fields = $this->contentFields($element, 'de');
+        $fields = $this->contentFields($element, self::DEFAULT_LANGUAGE);
         $fields['pid'] = $previousUid ? -$previousUid : $pageUid;
         $fields['CType'] = $element['CType'];
         $fields['colPos'] = 0;
@@ -125,7 +126,7 @@ final class SeedCommand extends Command
         if (isset($element['header_link'])) {
             $fields['header_link'] = 't3://page?uid=' . $this->pageUids[ltrim($element['header_link'], '@')];
         }
-        $alt = isset($element['alt']) ? $element['alt']['de'] : '';
+        $alt = isset($element['alt']) ? $element['alt'][self::DEFAULT_LANGUAGE] : '';
         // textmedia keeps its media in "assets", the hero element uses "image"
         $imageField = $element['CType'] === 'textmedia' ? 'assets' : 'image';
         return $this->insertRecord('tt_content', $fields, $element['image'] ?? null, $imageField, $alt, $pageUid);
@@ -303,8 +304,8 @@ final class SeedCommand extends Command
                 'allowed_languages' => '2',
             ],
             'NEW3' => $common + [
-                'title' => 'Übersetzung Englisch',
-                'description' => 'Länderredaktion international: übersetzt und pflegt nur englische Inhalte.',
+                'title' => 'Übersetzung Deutsch',
+                'description' => 'Länderredaktion Deutschland: übersetzt und pflegt nur deutsche Inhalte.',
                 'allowed_languages' => '1',
             ],
         ]]);

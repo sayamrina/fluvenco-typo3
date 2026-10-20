@@ -15,7 +15,7 @@ from playwright.sync_api import sync_playwright
 
 BASE = sys.argv[1].rstrip("/")
 REPORT = Path(sys.argv[2])
-START = ["/de-de/", "/en/", "/fr-fr/"]
+START = ["/en/", "/de-de/", "/fr-fr/"]
 AXE = (Path(__file__).parent / "axe.min.js").read_text()
 
 results, issues, axe_rules = [], [], Counter()

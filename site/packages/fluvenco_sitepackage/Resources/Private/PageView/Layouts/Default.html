@@ -1,8 +1,8 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 <a class="skip-link" href="#main"><f:translate key="LLL:EXT:fluvenco_sitepackage/Resources/Private/Language/locallang.xlf:skip" /></a>
 <f:render partial="Header" arguments="{_all}" />
-<main id="main">
-    <f:render section="Main" />
+<main id="main" class="{f:if(condition: '{page.id} == {site.rootPageId}', then: 'is-home', else: 'is-subpage')}">
+    <f:render section="Main" arguments="{_all}" />
 </main>
 <f:render partial="Footer" arguments="{_all}" />
 </html>
