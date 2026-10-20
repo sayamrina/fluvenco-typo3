@@ -24,12 +24,6 @@ address { font-style: normal; }
 .skip-link { position: absolute; left: -999px; top: 8px; background: var(--navy); color: #fff; padding: 8px 14px; z-index: 100; border-radius: 6px; }
 .skip-link:focus { left: 8px; }
 
-/* Portfolio banner */
-.project-banner { background: var(--teal); color: #fff; font-size: 14px; line-height: 1.45; }
-.project-banner p { margin: 0; padding: 9px 0; text-align: center; }
-.project-banner a { color: #fff; font-weight: 700; white-space: nowrap; margin-left: 6px; }
-.project-banner a:hover { color: #dff7f5; }
-
 /* Header */
 .site-header { position: sticky; top: 0; z-index: 50; background: rgba(255, 255, 255, .96); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
 .header-inner { display: flex; align-items: center; gap: 24px; min-height: 76px; }
@@ -57,6 +51,17 @@ address { font-style: normal; }
 .nav-toggle[aria-expanded="true"] .bar:nth-child(2) { transform: translateY(7px) rotate(45deg); }
 .nav-toggle[aria-expanded="true"] .bar:nth-child(3) { opacity: 0; }
 .nav-toggle[aria-expanded="true"] .bar:nth-child(4) { transform: translateY(-7px) rotate(-45deg); }
+
+/* Portfolio popup: always visible below the menu, cannot be closed */
+.project-popup { position: absolute; z-index: 1; top: calc(100% + 14px); left: 50%; transform: translateX(-50%); display: flex; align-items: center; gap: 12px; width: max-content; max-width: calc(100% - 32px); padding: 10px 12px 10px 14px; background: #fff; color: var(--ink); font-size: 14px; line-height: 1.4; border: 1px solid var(--line); border-left: 4px solid var(--teal); border-radius: 12px; box-shadow: 0 14px 36px rgba(7, 40, 64, .22); animation: popup-in .4s ease-out both; }
+.project-popup-badge { display: grid; place-items: center; flex: none; width: 26px; height: 26px; border-radius: 50%; background: var(--teal); color: #fff; font-size: 13px; }
+.project-popup a { flex: none; padding: 7px 12px; background: var(--navy); color: #fff; font-weight: 700; text-decoration: none; border-radius: 8px; white-space: nowrap; }
+.project-popup a:hover { background: var(--teal); color: #fff; }
+@keyframes popup-in { from { opacity: 0; transform: translate(-50%, -8px); } to { opacity: 1; transform: translate(-50%, 0); } }
+
+/* Leave room for the popup so it never hides content on first view */
+.hero-inner { padding-top: 112px !important; }
+.page-band { padding-top: 66px; }
 
 /* Breadcrumb band on subpages */
 .page-band { background: linear-gradient(180deg, var(--bg-soft), #fff); border-bottom: 1px solid var(--line); }
@@ -139,7 +144,7 @@ main.is-home + .site-footer { margin-top: 0; }
   .header-inner { gap: 12px; }
   .nav-toggle { display: block; order: 3; }
   .lang-nav { margin-left: auto; border-left: 0; padding-left: 0; }
-  .main-nav { display: none; position: absolute; top: 100%; left: 0; right: 0; max-height: calc(100vh - 76px); overflow-y: auto; background: #fff; border-bottom: 1px solid var(--line); box-shadow: var(--shadow); padding: 8px 24px 20px; margin: 0; }
+  .main-nav { z-index: 2; display: none; position: absolute; top: 100%; left: 0; right: 0; max-height: calc(100vh - 76px); overflow-y: auto; background: #fff; border-bottom: 1px solid var(--line); box-shadow: var(--shadow); padding: 8px 24px 20px; margin: 0; }
   .main-nav.open { display: block; }
   .main-nav > ul { flex-direction: column; }
   .main-nav > ul > li { border-bottom: 1px solid var(--line); }
@@ -157,7 +162,13 @@ main.is-home + .site-footer { margin-top: 0; }
 }
 @media (max-width: 560px) {
   body { font-size: 16px; }
+  .project-popup { top: calc(100% + 10px); flex-wrap: wrap; gap: 8px 10px; font-size: 13px; width: calc(100% - 24px); }
+  .project-popup span:nth-child(2) { flex: 1 1 calc(100% - 40px); min-width: 0; }
+  .project-popup a { margin-left: 36px; }
   .container, .content > .frame { padding-left: 18px; padding-right: 18px; }
+  .content > .frame-type-fluvenco_hero { padding: 0; }
+  .hero-inner { padding-top: 132px !important; }
+  .page-band { padding-top: 112px; }
   .brand img { width: 140px; }
   .lang-nav .globe { display: none; }
   .lang-nav a { min-width: 30px; padding: 6px 5px; }

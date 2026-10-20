@@ -1,10 +1,5 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 <a class="skip-link" href="#main"><f:translate key="LLL:EXT:fluvenco_sitepackage/Resources/Private/Language/locallang.xlf:skip" /></a>
-<aside class="project-banner" aria-label="Portfolio">
-    <div class="container">
-        <p><f:translate key="LLL:EXT:fluvenco_sitepackage/Resources/Private/Language/locallang.xlf:bannerText" /> <a href="https://sayamrina.github.io/"><f:translate key="LLL:EXT:fluvenco_sitepackage/Resources/Private/Language/locallang.xlf:bannerLink" /> →</a></p>
-    </div>
-</aside>
 <f:render partial="Header" arguments="{_all}" />
 <main id="main" class="{f:if(condition: '{page.id} == {site.rootPageId}', then: 'is-home', else: 'is-subpage')}">
     <f:render section="Main" arguments="{_all}" />
